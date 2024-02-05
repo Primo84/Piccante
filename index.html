@@ -1,0 +1,124 @@
+<!DOCTYPE HTML5 PUBLIC
+"--\\W3C\\DTD HTML 5.0\\PL">
+
+
+<HTML>
+    <HEAD>
+
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script type="Text/JavaScript" src="Script/Data.js"></script>
+        <script type="Text/JavaScript" src="Script/Script.js"></script>
+
+
+        <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS">
+
+        <link rel="stylesheet" href="Stylesheet/Style_1200.css" type="Text/CSS" media = "ALL AND (width <= 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_1000.css" type="Text/CSS" media = "ALL AND (width <= 1000px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_800.css" type="Text/CSS" media = "ALL AND (width <= 800px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_600.css" type="Text/CSS" media = "ALL AND (width <= 600px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_480.css" type="Text/CSS" media = "ALL AND (width <= 480px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_390.css" type="Text/CSS" media = "ALL AND (width <= 390px)">
+
+        <link rel="stylesheet" href="Stylesheet/Style_320.css" type="Text/CSS" media = "ALL AND (width <= 330px)">
+
+
+        <TITLE>
+            "Pizzeria Piccante Opole"
+        </TITLE>
+    </HEAD>
+
+    <BODY >
+        
+        <img draggable="false" src="Bmp/Header/Header_Pizza.jpg" id = "LogoBckg" onload="ImgLoad()">
+
+        <img draggable="false" src="Bmp/Header/Pizzeria_Logo.png" id = "LogoI">
+         
+       
+        <span id = "Text_Header">
+
+        </span>
+
+        <div id = "T1">
+            <img draggable="false" src="Bmp/Header/Text/L_P.png" id = "Text_P" class="Text_Logo_P">
+            <img draggable="false" src="Bmp/Header/Text/L_I.png" id = "Text_i" class="Text_Logo">
+            <img draggable="false" src="Bmp/Header/Text/L_C1.png" id = "Text_c1" class="Text_Logo">
+
+            <img draggable="false" src="Bmp/Header/Text/L_C2.png" id = "Text_c2" class="Text_Logo">
+            <img draggable="false" src="Bmp/Header/Text/L_A.png" id = "Text_a" class="Text_Logo">
+            <img draggable="false" src="Bmp/Header/Text/L_N.png" id = "Text_n" class="Text_Logo">
+
+            <img draggable="false" src="Bmp/Header/Text/L_T.png" id = "Text_t" class="Text_Logo">
+            <img draggable="false" src="Bmp/Header/Text/L_E.png" id = "Text_e" class="Text_Logo">
+          
+        </div>     
+
+                                                                      
+
+      
+
+<!--                                                                                        
+
+
+ *****************************************Główne Menu Wysuwane *****************************************
+
+
+
+-->
+
+
+       <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+            <span class = "MainMenuButt1"></span>
+            <span class = "MainMenuButt2"></span>
+            <span class = "MainMenuButt3"></span>
+
+       </div>
+
+        <div class ="MainMenu">
+
+            <table class = "MainMenuTable">
+
+                 <tr>
+
+                    <td id="MenuPizz" style = "border-top : 1px solid rgb(179, 115, 31)" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                </tr>
+
+                <tr>
+                    <td id="ZestOb" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
+                </tr>
+
+                <tr>
+                    <td id="Promocje" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                </tr>
+
+                <tr>
+                    <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                </tr>
+
+                <tr>
+                    <td id="Kontakt" style = "border-bottom : 1px solid rgb(179, 115, 31)" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <br><br><br>
+
+
+
+        <div style = "position : relative; width : 100%; height : 220px">
+
+        </div>
+        
+    </BODY>
+</HTML>
