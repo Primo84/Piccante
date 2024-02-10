@@ -1,0 +1,19 @@
+@font-face{
+    font-family : "BernardoModaContrast";
+    src : url("../Fonts/BernardoModaContrast.ttf");
+}
+
+@font-face{
+    font-family : "QuilonSemibold";
+    src : url("../Fonts/QuilonSemibold.otf");
+}
+
+@font-face{
+    font-family : "QuilonRegular";
+    src : url("../Fonts/QuilonRegular.otf");
+}
+
+@font-face{
+    font-family : "BerkshireSwashRegular";
+    src : url("../Fonts/BerkshireSwashRegular.ttf");
+}

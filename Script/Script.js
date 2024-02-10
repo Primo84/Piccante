@@ -7,6 +7,9 @@ let licz=95;
 let MenuVisible = false;
 let ImgLoade = false;
 let TimeImgLoad;
+let TimeWindowScroll;
+
+let Y;
 
 
 const Logo_T = ["Text_P", "Text_i", "Text_c1", "Text_c2", "Text_a", "Text_n", "Text_t", "Text_e"];
@@ -56,15 +59,21 @@ function LogoAnim()
 
     if(TIndex==8)
     {
-        document.getElementById("Text_Header").style.visibility = "visible";
-        document.getElementById("Text_Header").style.color = "rgb(179, 115, 31)";
+      //  document.getElementById("Text_Header").style.visibility = "visible";
+        $('#Text_Header').fadeIn(1000).css("color", "rgb(179, 115, 31)");
+    //    document.getElementById("Text_Header").style.color = "rgb(179, 115, 31)";
 
         clearTimeout(IntervalId);
     }
 }
 
 
+/*
 
+               Top Menu  Events
+
+
+*/
 
 function MenuMouseEnt()
 {
@@ -85,6 +94,51 @@ function MenuItemMouseEnt(Item)
 function MenuItemMouseLeave(Item)
 {
     $(Item).css("color", "rgb(243, 241, 235)");
+}
+
+function ScrollWindow(SY)
+{
+    let prevSY;
+
+    if(window.scrollY < SY)
+    {
+        prevSY=window.scrollY;
+
+        if(SY - window.scrollY > 200)
+            window.scrollBy(0,200);
+        else 
+            window.scrollBy(0,SY-window.scrollY);
+
+          //if(window.scrollY < SY && window.scrollY != prevSY)
+            if(window.scrollY != prevSY)
+                TimeWindowScroll = setTimeout(ScrollWindow, 50, Y);
+
+    }
+   
+}
+
+function MenuItemMouseClick(ItemText)
+{
+    let El;
+    let h;
+    let i;
+
+    if(ItemText == 'Kontakt')
+    {
+
+        El=document.getElementById("footer");
+
+        h = parseInt($('#footer').css('height').slice(0,-2),10); 
+
+        i= window.scrollY;
+
+        Y = El.offsetTop + h;
+
+        ScrollWindow(Y);
+
+    }
+    
+
 }
 
 
@@ -146,6 +200,69 @@ function ShowHideMenu()
 
 }
 
+/*
+
+                Diner Link Button Events
+
+
+*/
+
+function MouseLinkEnt(EV)
+{
+    $(this).css({"border-width" : "5px", "color" : "rgb(250, 1, 42)"});
+    EV.stopPropagation();
+
+}
+
+
+function MouseLinkLeave(EV)
+{
+    $(this).css({"border-width" : "3px", "color" : "rgb(232, 150, 18)"});
+    EV.stopPropagation();
+}
+
+
+/*
+
+               Telefon link events
+
+
+*/
+
+function TelLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function TelLinkLeave(EV)
+{
+    $(this).css("color", "rgb(203, 192, 177)");
+    EV.stopPropagation();
+}
+
+/*
+
+               Telefon link events
+
+
+*/
+
+function GoogleLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function GoogleLinkLeave(EV)
+{
+    $(this).css("color", "rgb(210, 183, 146)");
+    EV.stopPropagation();
+}
 
 
 function LoadTables()              
@@ -170,9 +287,24 @@ function WaitForImg(){
         TimeImgLoad = window.setTimeout(WaitForImg,1000);
 }
 
-$(document).ready(()=> 
+
+function Load()
 {
     TimeImgLoad = window.setTimeout(WaitForImg,1000);
 
   //  LoadTables();
-});
+}
+
+document.onload = Load();
+
+$(document).ready(() =>{
+
+    $('span.Diner_Link').hover(MouseLinkEnt, MouseLinkLeave);
+    $('span.Prom_Link').hover(MouseLinkEnt, MouseLinkLeave);
+
+    $('a.Tel').hover(TelLinkEnt, TelLinkLeave);
+    $('a.Kom').hover(TelLinkEnt, TelLinkLeave);
+
+    $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
+
+})

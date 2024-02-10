@@ -12,6 +12,19 @@
         <script type="Text/JavaScript" src="Script/Data.js"></script>
         <script type="Text/JavaScript" src="Script/Script.js"></script>
 
+        <link href='http://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Courgette&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Cormorant+Upright&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link rel = "stylesheet" href="StyleSheet/StyleFonts.css" type = "Text/CSS">
 
         <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS">
 
@@ -104,21 +117,228 @@
                 </tr>
 
                 <tr>
-                    <td id="Kontakt" style = "border-bottom : 1px solid rgb(179, 115, 31)" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                    <td id="Kontakt" style = "border-bottom : 1px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
                 </tr>
 
             </table>
 
         </div>
 
-
-        <br><br><br>
-
+<!--                                                                                        
 
 
-        <div style = "position : relative; width : 100%; height : 220px">
+ *****************************************Pierwsze foto oraz godziny otwarcia *****************************************
+
+
+
+-->
+        
+        <div class = "Under_Header">
+
+            <div class ="Top_timeOpen">
+
+                <img src = "Bmp/Body/Pizza_Table.jpg" width="100%" height="100%">
+
+                <span class = "Top_timeOpen">
+                    <h4>Godziny Otwarcia :</h4>
+                    Poniedziałek........11 - 20<br>
+                    Wtorek..............11 - 20<br>
+                    Środa...............11 - 20<br>
+                    Czwartek............11 - 20<br>
+                    Piątek..............11 - 20<br>
+                    Sobota..............12 - 20<br>
+
+                </span>
+
+            </div>
+
+            <div class = "Top_Foto">
+
+                <img src = "Bmp/Foto/Enter.jpg" class = "Enter_Foto">
+
+                <img src = "Bmp/Foto/Front_1.jpg" class = "Foto1">
+
+                <img src = "Bmp/Foto/Front_2.jpg" class = "Foto2">
+
+            </div>
 
         </div>
+
+
+
+<!--                                                                                        
+
+
+ *****************************************Pierwszy text raklamowy *****************************************
+
+
+
+-->
+
+        <div class = "TopText">
+
+            <span class = "Top_Header">
+                Jesteś głodny ?
+            </span><br>
+
+            <span class = "TopTextLine"></span>
+
+            <span class = "Top_Text">
+                <i>
+                Wpadnij do nas na przepyszną pizzę.
+                Mamy bogaty wybór. Napewno znajdziesz coś dla siebie.
+                Serwujemu aż cztery rozmiary.
+                Przekonaj się sam i odwiedź nasz lokal. Nie zwlekaj i pozwól się zaskoczyć.
+                </i>
+            </span>
+
+            <span class = "Top_Header1">
+                Nie chcesz się ruszać ?
+            </span><br>
+
+            <span class = "TopTextLine1"></span>
+
+            <span class = "Top_Text1">
+                <i>
+                Wystarczy, że zadzwonisz. Na Państwa prośbę możemy dowieźć
+                zamówione potrawy pod wskazanu adres.
+                </i>
+            </span>
+        
+<!--                                                                                        
+
+
+ *****************************************Linki do adresu i telefonu *****************************************
+
+
+
+-->
+
+        <div class="Location">
+            <img src="icons/location2.png" class="Location">
+            <span class = "Location" onclick = "MenuItemMouseClick('Kontakt')">
+                Znajdziesz nas tutaj....
+            </span>
+        </div>
+    
+
+        <div class="Contact">
+            <img src="icons/telephone.png" class="Contact">
+            <a href="tel:790256292" class = "Contact">
+                Zadzwoń już teraz....
+            </a>
+        </div>
+
+
+    </div>
+<!--                                                                                        
+
+
+ ***************************************** Drugi tekst  *****************************************
+
+
+
+-->
+
+<div class = "BodyText2">
+
+    <span class = "HeadText2">
+        Przeróżne zestawy obiadowe
+    </span>
+
+    <span class = "TextLine2_1">
+    </span>
+
+    <span class = "Text2">
+        W naszej restauracji podajemy także zestawy obiadowe.
+        Dzięki wieloletniemu doświadczeniu naszych kucharzy, nasze zupy
+        posiadają wyśmienity smak. <br>
+        Codziennie do wyboru w promocyjnej cenie : <br>
+        <ul style="list-style-type : circle">
+
+            <li>Zupa dnia</li>
+            <li>Danie dnia</li>
+
+        </ul>
+        
+    </span>
+
+    <span class = "TextLine2_2">
+    </span>
+
+    <span class = "Diner_Link">
+        Przejdź do oferty
+    </span>
+
+</div>
+
+
+<!--                                                                                        
+
+
+ ***************************************** Ostatnia reklama *****************************************
+
+
+
+-->
+
+<div class = "TextLine3">
+
+    <span class = "HeadText3">
+        Kuszące promocje !!!
+    </span>
+
+    <span class = TextLine3>
+        Specjanlnie dla naszych klientów przygotowaliśmy 
+        kuszące promocje. Kliknij przycisk poniżej i sprawdź
+        co mamy do zaoferowania.
+    </span>
+
+    <span class = "Prom_Link">
+        Przejdź do promocji
+    </span>
+
+</div>
+
+
+<!--                                                                                        
+
+
+ *****************************************Dolna Stopka *****************************************
+
+
+
+-->
+
+
+        <footer class = "footer" id = "footer">
+            <img src = "Bmp/Body/Logo.png">
+
+            <span class = "Adres_H">
+                Nasz Adres
+            </span>
+
+            <span class = "Adres">
+               Opole Metalchem Oświęcimska 98<br>
+                (Pawilon Biedronki)
+            </span>
+
+            <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
+                Zobacz na GoogleMaps
+            </a>
+
+            <img src = "icons/Address.png" id = "Address">
+
+            <span class = "Tel_H">
+                Numery tel.
+            </span>
+
+            <img src = "icons/Tel.png" id = "Tel"> 
+
+            <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
+            <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
+
+        </footer>
         
     </BODY>
 </HTML>

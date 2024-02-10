@@ -40,7 +40,7 @@ img.Text_Logo{
     text-align : center;
     transition-property : color;
     transition-duration : 5000ms;
-    visibility : hidden;
+    display : none;
     letter-spacing : 10px;
 
 }
@@ -128,3 +128,446 @@ table.MainMenuTable td{
     text-align : center;
 
 }
+
+
+
+/*
+
+    ************************ Top and Under Header****************************
+
+
+*/
+
+div.Under_Header{
+    position : relative;
+    border : 0px solid green;
+    left :0px; top : 50px; width : 100%; height : 460px;
+}
+
+
+div.Top_Foto{
+
+    position : absolute;
+    border : 0px solid red;
+    left :0px; top : 0px; width : 50%; height : 450px;
+
+}
+
+img.Enter_Foto{
+     
+    position : absolute;
+    border:  6px solid rgb(228, 222, 222);
+    left :0px; top : 0px; width : 40%; height : 200px;
+}
+
+img.Foto1{
+     
+    position : absolute;
+    border:  6px solid rgb(228, 222, 222);
+    left :20%; top : 100px; width : 40%; height :200px;
+}
+
+img.Foto2{
+     
+    position : absolute;
+    border:  6px solid rgb(228, 222, 222);
+    left :50%; top : 250px; width : 40%; height :200px;
+}
+
+
+
+/*
+
+    ************************ Top Time Open Text****************************
+
+
+*/
+
+div.Top_timeOpen
+{
+    position : absolute;
+    border : 6px solid rgb(228, 222, 222);
+    left : 50%; top : 0px; width : 48%; height : 450px;
+
+}
+
+span.Top_timeOpen{
+    position : absolute;
+    border : 0px solid red;
+    left : 30%; top : 0px; width : 70%; height :100%;
+    text-align : center;
+    font-family: 'Cormorant Upright', sans-serif;
+    font-size : 28px;
+    color :rgb(216, 199, 199)
+}
+
+
+
+/*
+
+    ************************ Top Text****************************
+
+
+*/
+
+
+div.TopText{
+    position : relative;
+   /* border-image : url("../Bmp/Body/Frames/frame3.png") 40/10px  repeat;*/
+  /*  border-image: linear-gradient(rgb(153, 175, 211), rgb(11, 32, 81)) 5 / 5px; */
+    background-origin : data-box;
+    background-color : rgb(2, 6, 34);
+    border-top-left-radius : 15px;
+    border-top-right-radius : 15px;
+    left:0%; top : 100px; width : 100%; height :600px;
+
+}
+
+span.Top_Header{
+    position : absolute;
+    font-family : "BernardoModaContrast";
+    border : 0px solid yellow;
+    color : rgb(107, 136, 186);
+    top : 45px; left :0px; width : 50%;
+    font-size : 56px;
+    font-weight : bold;
+    text-align : center;
+}
+
+span.TopTextLine{
+    position : absolute;
+    background-color : rgb(107, 136, 186);
+    left : 20%; top : 130px; width : 10%; height : 4px;
+     
+}
+
+span.Top_Text{
+    position : absolute;
+    border : 0px solid green;
+    font-family : "QuilonRegular";
+    color :rgb(91, 85, 85);
+    font-size : 22px;
+    top: 145px; left : 10%; width : 35%;
+}
+
+/*******************************************/
+
+span.Top_Header1{
+    position : absolute;
+    font-family : "BernardoModaContrast";
+    border : 0px solid yellow;
+    color : rgb(107, 136, 186);
+    top : 320px; left :0px; width : 50%;
+    font-size : 56px;
+    font-weight : bold;
+    text-align : center;
+}
+
+span.TopTextLine1{
+    position : absolute;
+    background-color : rgb(107, 136, 186);
+    left : 20%; top : 405px; width : 10%; height : 4px;
+     
+}
+
+span.Top_Text1{
+    position : absolute;
+    border : 0px solid green;
+    font-family : "QuilonRegular";
+    color :rgb(91, 85, 85);
+    font-size : 22px;
+    top: 420px; left : 10%; width : 35%;
+}
+
+
+/*
+
+    ************************ Top Location****************************
+
+
+*/
+
+div.Location{
+
+    position : absolute;
+    border : 0px solid red;
+    top: 170px; left : 50%; width : 50%; height : 110px;
+
+}
+
+img.Location{
+    position : absolute;
+    left : 5%; top : 0px; width : 13% ; height :70px; 
+}
+
+span.Location
+{
+    position : absolute;
+    border : 0px solid rgb(11, 15, 233);
+    padding-top : 20px;
+    font-family: 'Courgette', sans-serif;
+    color :rgb(107, 136, 186);
+    font-size : 32px;
+    top: 0px; left : 20%; width : 80%; height : 70px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+
+/*
+
+    ************************ Top Contact****************************
+
+
+*/
+
+div.Contact{
+
+    position : absolute;
+    border : 0px solid red;
+    top: 290px; left : 60%; width : 40%; height : 140px;
+
+}
+
+img.Contact{
+    position : absolute;
+    left : 5%; top : 0px; width : 15% ; height :70px; 
+}
+
+a.Contact
+{
+    position : absolute;
+    border : 0px solid red;
+    padding-top : 20px;
+    font-family: 'Courgette', sans-serif;
+    text-decoration : none;
+    color :rgb(107, 136, 186);
+    font-size : 32px;
+    top: 0px; left : 22%; width : 78%; height : 70px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+
+/*
+
+    ************************ Drugi tekst i tło ****************************
+
+
+*/
+
+
+div.BodyText2{
+
+    position : relative;
+    border : 0px solid green;
+    left : 0px; top : 100px; width : 100%; height : 700px;
+    border-top :2px solid rgb(241, 240, 238);
+    border-bottom :4px solid rgb(255, 132, 0);
+    background-color : rgb(0, 0, 0);
+
+}
+
+span.HeadText2
+{
+    position : absolute;
+    left : 0px; top : 50px; width : 100%; height : 70px;
+    color : rgb(250, 117, 1);
+    text-align : center;
+    font-family : 'Marck Script';
+    font-size : 64px;
+
+}
+
+span.TextLine2_1
+{
+    position : absolute;
+    left : 16%; top : 140px; width : 70%; height : 10px;
+    border-radius : 3px;
+    background-color : rgb(250, 117, 1);
+}
+
+span.Text2
+{
+    position : absolute;
+    border : 0px solid red;
+    left : 20% ; top : 170px; width : 60%; height : 370px;
+    color : rgb(234, 227, 221);
+    font-family: 'Cormorant Upright', sans-serif;
+    font-size : 34px;
+
+}
+
+span.TextLine2_2
+{
+    position : absolute;
+    left : 16%; top : 495px; width : 70%; height : 10px;
+    border-radius : 3px;
+    background-color : rgb(250, 117, 1);
+}
+
+span.Diner_Link{
+
+    position : absolute;
+    left : 35%; top : 600px; width : 30%; height : 50px;
+    border-radius : 8px;
+    border : 3px solid rgb(250, 1, 42);
+ /*   background-color : rgb(250, 1, 42); */
+    font-family : "Tahoma";
+    font-size : 32px;
+    color : rgb(230, 134, 18);
+    text-align : center;
+    cursor : pointer;
+
+    transition : border 200ms, color 1000ms;
+}
+
+/*rgb
+
+    ************************ Ostatni tekst ****************************
+
+
+*/
+
+
+div.TextLine3{
+    position : relative;
+    border : 0px solid red;
+    left : 0px; top : 100px; width : 100%; height : 450px;
+}
+
+span.HeadText3{
+
+    position : absolute;
+    left : 0px; top : 10px; width:100%; height : 70px;
+    text-align : center;
+    font-family: 'Paprika', sans-serif;
+    font-size : 68px;
+    color : rgb(255, 107, 1)
+
+}
+
+span.TextLine3{
+
+    position : absolute;
+    left : 25%; top : 130px; width : 60%; height : 70px;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 36px;
+    color : rgb(29, 6, 6)
+
+}
+
+span.Prom_Link{
+
+    position : absolute;
+    left : 35%; top : 300px; width : 30%; height : 50px;
+    border-radius : 8px;
+    border : 3px solid rgb(250, 1, 42);
+ /*   background-color : rgb(250, 1, 42); */
+    font-family : "Tahoma";
+    font-size : 32px;
+    color : rgb(230, 134, 18);
+    text-align : center;
+    cursor : pointer;
+
+    transition : border 200ms, color 100ms;
+}
+
+
+/*
+
+    ************************ Footer ****************************
+
+
+*/
+
+footer.footer{
+
+    position : relative;
+    left : 0px; top : 100px; width : 100%; height : 350px;
+    border-top :4px solid rgb(255, 132, 0);
+    background-color : rgb(0, 0, 0);
+
+}
+
+
+footer.footer img{
+
+    position : absolute;
+    top:25px; left : 3%; width : 20%; height : 160px;
+}
+
+#Address{
+    position : absolute;
+    left : 35%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Adres_H{
+    position : absolute;
+    left : 30%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 36px;
+    color : rgb(230, 134, 18);
+
+}
+
+
+span.Adres{
+    position : absolute;
+    left : 30%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    
+}
+
+a.LinkGoogle{
+
+    position : absolute;
+    left : 30%; top :290px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(210, 183, 146);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+
+#Tel{
+    position : absolute;
+    left : 75%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Tel_H{
+    position : absolute;
+    left : 70%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 36px;
+    color : rgb(230, 134, 18);
+
+}
+
+a.Tel{
+
+    position : absolute;
+    left : 70%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+a.Kom{
+
+    position : absolute;
+    left : 70%; top :230px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+
