@@ -106,7 +106,7 @@ div.MainMenu{
 
     position : absolute;
     border : 0px solid red;
-    left : 75%; top : 70px; width : 24%; height : 180px; 
+    left : 75%; top : 70px; width : 24%; height : 220px; 
     overflow : hidden;
 }
 
@@ -127,7 +127,7 @@ table.MainMenuTable td{
     font-family : "Tahoma";
     font-size : 26px;
     text-align : center;
-
+    padding : 5px;
 }
 
 
@@ -215,7 +215,6 @@ div.TopText{
     position : relative;
    /* border-image : url("../Bmp/Body/Frames/frame3.png") 40/10px  repeat;*/
   /*  border-image: linear-gradient(rgb(153, 175, 211), rgb(11, 32, 81)) 5 / 5px; */
-    background-origin : data-box;
     background-color : rgb(2, 6, 34);
     border-top-left-radius : 15px;
     border-top-right-radius : 15px;

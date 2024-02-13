@@ -5,10 +5,10 @@ let TIndex=0;
 let L_position=100;
 let licz=95;
 let MenuVisible = false;
-let ImgLoade = false;
+let ImgLoaded = false;
 let TimeImgLoad;
 let TimeWindowScroll;
-
+let LoadImgTimeCount = 0;
 let Y;
 
 
@@ -96,26 +96,6 @@ function MenuItemMouseLeave(Item)
     $(Item).css("color", "rgb(243, 241, 235)");
 }
 
-function ScrollWindow(SY)
-{
-    let prevSY;
-
-    if(window.scrollY < SY)
-    {
-        prevSY=window.scrollY;
-
-        if(SY - window.scrollY > 200)
-            window.scrollBy(0,200);
-        else 
-            window.scrollBy(0,SY-window.scrollY);
-
-          //if(window.scrollY < SY && window.scrollY != prevSY)
-            if(window.scrollY != prevSY)
-                TimeWindowScroll = setTimeout(ScrollWindow, 50, Y);
-
-    }
-   
-}
 
 function MenuItemMouseClick(ItemText)
 {
@@ -136,6 +116,10 @@ function MenuItemMouseClick(ItemText)
 
         ScrollWindow(Y);
 
+    }
+    else if(ItemText=='ZestOb')
+    {
+        window.location.href = "Diner.html";
     }
     
 
@@ -198,6 +182,36 @@ function ShowHideMenu()
 
     }
 
+}
+
+
+/*
+
+               Scrolling window to contact
+
+
+*/
+
+
+function ScrollWindow(SY)
+{
+    let prevSY;
+
+    if(window.scrollY < SY)
+    {
+        prevSY=window.scrollY;
+
+        if(SY - window.scrollY > 200)
+            window.scrollBy(0,200);
+        else 
+            window.scrollBy(0,SY-window.scrollY);
+
+          //if(window.scrollY < SY && window.scrollY != prevSY)
+            if(window.scrollY != prevSY)
+                TimeWindowScroll = setTimeout(ScrollWindow, 50, Y);
+
+    }
+   
 }
 
 /*
@@ -280,17 +294,31 @@ function WaitForImg(){
 
     if(ImgLoaded == true)
     {
-        $('#Text_Header').html("Najlepszą pizzę<br>zjesz u nas")
+        $('#Text_Header').html("Najlepszą pizzę<br>zjesz u nas");
         IntervalId = window.setInterval(LogoAnim,20);
     }
     else 
-        TimeImgLoad = window.setTimeout(WaitForImg,1000);
+    {
+        if(LoadImgTimeCount>=3)
+        {
+            LoadImgTimeCount = 0;
+
+            $('#Text_Header').html("Najlepszą pizzę<br>zjesz u nas");
+            IntervalId = window.setInterval(LogoAnim,20);
+        }
+        else
+        {
+            LoadImgTimeCount++;
+
+            TimeImgLoad = window.setTimeout(WaitForImg,1000);
+        }
+    }
 }
 
 
 function Load()
 {
-    TimeImgLoad = window.setTimeout(WaitForImg,1000);
+    TimeImgLoad = window.setTimeout(WaitForImg,1500);
 
   //  LoadTables();
 }

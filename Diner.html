@@ -1,0 +1,210 @@
+<!DOCTYPE HTML5 PUBLIC
+"--\\W3C\\HTML5\\PL">
+
+
+<HTML>
+    <HEAD>
+
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script type = "Text/JavaScript" src = "Script/Diner.js"> </script>
+        <script type = "Text/JavaScript" src = "Script/Data.js"> </script>
+
+        <link rel = "stylesheet" href = "Stylesheet/StyleFonts.css" type = "Text/CSS">
+
+        <link href='http://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style.css" type = "Text/CSS" media = "ALL AND (width > 1200px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_1200.css" type = "Text/CSS" media = "ALL AND (width <= 1200px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_1000.css" type = "Text/CSS" media = "ALL AND (width <= 1000px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_800.css" type = "Text/CSS" media = "ALL AND (width <= 800px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_600.css" type = "Text/CSS" media = "ALL AND (width <= 600px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_480.css" type = "Text/CSS" media = "ALL AND (width <= 480px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_390.css" type = "Text/CSS" media = "ALL AND (width <= 390px)">
+        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_320.css" type = "Text/CSS" media = "ALL AND (width <= 320px)">
+
+
+        <TITLE>
+                Zestawy Obiadowe
+        </TITLE>
+    </HEAD>
+
+
+    <BODY onresize = "BodyRezise()">
+
+        <div class = "Logo">
+            <img draggable="false" src = "Bmp/Header/2.jpg" class = "LogoBckg">
+            <img draggable="false" src = "Bmp/Body/Logo.png" class = "LogoImg">
+
+            <!--                                                                                        
+
+
+            *****************************************Główne Menu Wysuwane *****************************************
+
+
+            -->
+
+
+            <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+                <span class = "MainMenuButt1"></span>
+                <span class = "MainMenuButt2"></span>
+                <span class = "MainMenuButt3"></span>
+
+            </div>
+
+            <div class ="MainMenu">
+
+                <table class = "MainMenuTable">
+
+                    <tr>
+                        <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
+                    </tr>
+
+                    <tr>
+
+                        <td id="MenuPizz" style = "border-top : 3px solid rgb(239, 103, 6);" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Promocje" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                    </tr>
+
+                </table>
+
+            </div>   
+        </div>
+
+        <div class = "BodyText1">
+
+            <span class = "HeaderText1">
+
+                Poczuj się wyjątkowo
+
+            </span>
+
+            <span class = "HeaderText1_2">
+
+                Niezapomniany smak
+                
+            </span>
+
+            <span class = "Text1">
+
+                W naszej restauracji zjesz wyśmienite obiady.
+                Wszystko przyrządzone z ogromną starannością sprawia, że
+                nasze potrawy mają wyrazisty smak. 
+                
+            </span>
+
+            <div class = "Menu">
+
+                <!--
+
+                *****************************************Menu Wysuwane Sałatki*****************************************
+
+                -->
+
+
+
+
+                <span class="Salats_Button" onclick="ShowHide_Menu('Salats_Desc', 'Span.Salats_Button', 'SAŁATKI', 0)" onmouseenter = "MButtMouseEnt('Span.Salats_Button')" onmouseleave = "MButtMouseLeave('Span.Salats_Button')">
+                    SAŁATKI<sub><b>&#187</b></sub>
+                </span>
+            
+                <div class ="Salats">
+
+                    <table id = "Salats_Desc">
+                    
+                    </table>
+
+                </div>
+
+        
+
+                <!--                                                                                        
+
+
+                *****************************************Menu Wysuwane Napoje zimne*****************************************
+
+
+
+                -->
+
+
+                <span class="ColdDrink_Button" onclick="ShowHide_Menu('ColdDrink_Desc', 'Span.ColdDrink_Button', 'NAPOJE ZIMNE', 1)" onmouseenter = "MButtMouseEnt('Span.ColdDrink_Button')" onmouseleave = "MButtMouseLeave('Span.ColdDrink_Button')">
+                    NAPOJE ZIMNE<sub><b>&#187</b></sub>
+                </span>
+            
+                <div class ="ColdDrink">
+
+                    <table id = "ColdDrink_Desc">
+                    
+                    </table>
+
+                </div>
+
+
+
+                <!--                                                                                        
+
+
+                *****************************************Menu Wysuwane Napoje gorące*****************************************
+
+
+
+                -->
+
+
+                <span class="HotDrink_Button" onclick="ShowHide_Menu('HotDrink_Desc', 'Span.HotDrink_Button', 'NAPOJE GORĄCE', 2)" onmouseenter = "MButtMouseEnt('Span.HotDrink_Button')" onmouseleave = "MButtMouseLeave('Span.HotDrink_Button')">
+                    NAPOJE GORĄCE<sub><b>&#187</b></sub>
+                </span>
+
+                <div class ="HotDrink">
+
+                    <table id = "HotDrink_Desc">
+
+                    </table>
+
+                </div>
+            
+
+                <!--                                                                                        
+
+
+                *****************************************Menu Wysuwane Zestawy Obiadowe*****************************************
+
+
+
+                -->
+
+
+                <span class="Diner_Button" onclick="ShowHide_Menu('Diner_Desc', 'Span.Diner_Button', 'ZESTAWY OBIADOWE', 3)" onmouseenter = "MButtMouseEnt('Span.Diner_Button')" onmouseleave = "MButtMouseLeave('Span.Diner_Button')">
+                    ZESTAWY OBIADOWE<sub><b>&#187</b></sub>
+                </span>
+
+                <div class ="Diner">
+
+                    <table id = "Diner_Desc">
+
+                    </table>
+
+                </div>
+
+            </div>
+    
+        </div>
+
+    </BODY>
+
+</HTML>
