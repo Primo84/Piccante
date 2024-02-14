@@ -121,26 +121,26 @@ function BodyRezise()
 
     size = parseInt($('#Salats_Desc').css('height').slice(0,-2), 10);
    // size=(Number($('#MButton_ItemC').css('height').slice(0,-2))+20) * SalatTable.length * 2;
-    size += 50;
+    size += 100;
 
     $('div.Salats').css('height',size.toString() + 'px');
 
     size = parseInt($('#ColdDrink_Desc').css('height').slice(0,-2), 10);
   //  size=(Number($('#MButton_ItemC').css('height').slice(0,-2))+10) * ColdDrinkTable.length;
 
-    size += 50;
+    size += 100;
 
     $('div.ColdDrink').css('height',size.toString() + 'px');
 
     size = parseInt($('#HotDrink_Desc').css('height').slice(0,-2), 10);    
  //   size=(Number($('#MButton_ItemC').css('height').slice(0,-2))+10) * HotDrinkTable.length;
-    size += 50;
+    size += 100;
 
     $('div.HotDrink').css('height',size.toString() + 'px');
 
     size = parseInt($('#Diner_Desc').css('height').slice(0,-2), 10);
  //   size=(Number($('#MButton_ItemC').css('height').slice(0,-2))+10) * DinerTable.length;
-    size += 50;
+    size += 100;
         
     $('div.Diner').css('height',size.toString() + 'px');
 
@@ -232,11 +232,11 @@ function ShowHide_Menu(Class_N, Buton_Selector, Button_Text, index)
                // $(DivTable[i]).css('height', '0px');
                 $(MenuId[i]).css('top','-110%');
 
-              MenuBool[i] = "false";
+                MenuBool[i] = "false";
 
-              $(ButtonSelect[i]).html(ButtonText[i] + '<sub><b>&#187</b></sub>');
+                $(ButtonSelect[i]).html(ButtonText[i] + '<sub><b>&#187</b></sub>');
 
-              break;
+                break;
             }  
         }
     }
@@ -257,7 +257,7 @@ function ShowHide_Menu(Class_N, Buton_Selector, Button_Text, index)
 
         El.style.top = "0px";
         MenuBool[index]="true";
-       $(Buton_Selector).html(Button_Text + '<sub><b>&#171</b></sub>');
+        $(Buton_Selector).html(Button_Text + '<sub><b>&#171</b></sub>');
 
     }else
     {
@@ -313,6 +313,8 @@ function LoadTables()
 
     size = parseInt($('#Salats_Desc').css('height').slice(0,-2), 10);
 
+    size += 100;
+
     $('div.Salats').css('height',size.toString() + 'px');
 
     // *****************************************Menu wysuwane napoje zimne ***************************************************
@@ -326,6 +328,8 @@ function LoadTables()
     }
 
     size = parseInt($('#ColdDrink_Desc').css('height').slice(0,-2), 10);
+
+    size += 100;
 
     $('div.ColdDrink').css('height',size.toString() + 'px');
 
@@ -342,6 +346,8 @@ function LoadTables()
 
        size = parseInt($('#HotDrink_Desc').css('height').slice(0,-2), 10);
 
+       size += 100;
+
         $('div.HotDrink').css('height',size.toString() + 'px');
     
 
@@ -356,6 +362,8 @@ function LoadTables()
     }
 
         size = parseInt($('#Diner_Desc').css('height').slice(0,-2), 10);
+
+        size += 100;
     
 
         $('div.Diner').css('height',size.toString() + 'px');
