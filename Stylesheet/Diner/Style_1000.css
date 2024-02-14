@@ -1,0 +1,550 @@
+div.Logo{
+    position : absolute; z-index : 0; left : 0.75%; top : 0px; width : 98.5%; height : 70%;
+}
+
+img.LogoBckg{
+    position : relative;
+    left : 0px; top : 0px; width : 100%; height : 100%
+}
+
+img.LogoImg{
+    position : absolute;
+    left : 2%; top : 10px; width : 25%; height : 140px;
+}
+
+
+
+/*
+
+    ************************ Głowne menu wysuwane Przycisk****************************
+
+
+*/
+
+
+
+
+div.MainMenuButton{
+
+    position : absolute;                                            
+    border : 0px solid rgb(227, 220, 220);
+    left : 95%; top: 20px; width : 3%; height : 30px;
+    cursor : pointer;
+}
+
+span.MainMenuButt1{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 0px; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt2{
+
+    position : absolute;
+    background-color : rgb(243, 241, 235);
+    left : 0%; top: 38%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt3{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 76%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+/*
+
+    ************************ Głowne menu wysuwane Tabela****************************
+
+
+*/
+
+div.MainMenu{
+
+    position : absolute;
+    border : 0px solid red;
+    left : 75%; top : 70px; width : 24%; height : 180px; 
+    overflow : hidden;
+}
+
+
+table.MainMenuTable{
+
+    position : absolute;
+    background-color : rgb(13, 13, 13); 
+    left : 110%; top : -110%; width : 100%; height : 100%; 
+    transition : left 500ms, top 500ms;   
+    cursor : pointer; 
+
+}
+
+table.MainMenuTable td{
+
+    border  : 0px;
+    color : rgb(243, 235, 235);
+    font-family : "Tahoma";
+    font-size : 18px;
+    text-align : center;
+
+}
+
+/*
+
+    ************************ First Text Diner and menu ****************************
+
+
+*/
+
+div.BodyText1{
+    position : relative;
+    border : 0px solid red;
+    left : 0px; top : 71%;  width : 100%; height : 500px;
+    background-color : rgb(2, 6, 34); 
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+    transition-property : height;
+    transition-duration : 500ms;
+
+}
+
+
+span.HeaderText1{
+    position :absolute;
+    left : 0px; top : 30px; width : 100%;
+    font-family: 'Paprika', sans-serif;;
+    font-size : 34px;
+    text-align : center;
+    color :rgb(107, 136, 186);
+    text-shadow : 15px 15px 15px rgb(117, 7, 191);
+}
+
+span.HeaderText1_2{
+    position :absolute;
+    border-top : 6px solid rgb(107, 136, 186);
+    padding : 10px;
+    left : 0px; top : 120px; width : 100%;
+    font-family: "BernardoModaContrast";
+    font-size : 40px;
+    text-align : center; font-style : italic;
+    color :rgb(107, 136, 186);
+}
+
+span.Text1{
+    position :absolute;
+    border-bottom : 6px solid rgb(107, 136, 186);
+    padding : 10px;
+    left : 25%; top : 200px; width : 50%;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 16px;
+    color :rgb(107, 136, 186);
+}
+
+
+
+
+/*
+
+    ************************ Menu wysuwane ****************************
+
+
+*/
+
+
+div.Menu{
+    position : absolute;
+    left : 0%; top: 260px; width : 100%;
+}
+
+
+
+/*
+
+    ************************ Sałatki menu wysuwane****************************
+
+    
+*/
+
+
+
+
+div.Meals{
+    position : absolute;
+    border : 0px solid rgb(241, 9, 9);
+    left : 25%; top: 100px; width : 50%;
+    border-top : 6px solid rgb(167, 160, 160);
+    border-radius : 4px;
+    overflow : hidden;
+    transition-property : height;
+    transition-duration : 500ms;
+}
+
+
+span.Salats_Button{
+    position : absolute;
+    text-align : center;
+    vertical-align : text-bottom;
+    color : rgb(242, 237, 237);
+    font-family :'Times New Roman', Times, serif;
+    Font-size : 20px;
+    left : 5%; top: 40px; width : 15%;
+    transition-property : color;
+    transition-duration : 1000ms;
+   /* padding-top : 10px; */
+    cursor : pointer;
+}
+
+#Salats_Desc{  
+  /*  background-color : rgb(71, 71, 71); */
+ /*   border : 4px double rgb(174, 151, 151);*/
+    position : absolute;
+    left : 0px; top: -110%; width : 100%;
+    transition-property : top;
+    transition-duration : 500ms;
+    z-index : 1;
+}
+
+
+
+/*
+
+    ************************ Napoje Zimne menu wysuwane****************************
+
+
+*/
+
+
+span.ColdDrink_Button{
+    position : absolute;
+    color : rgb(242, 237, 237);
+    text-align : center;
+    vertical-align : text-bottom;
+    font-family :'Times New Roman', Times, serif;
+    Font-size : 20px;
+    left : 20%; top: 40px; width : 20%;
+    transition-property : color;
+    transition-duration : 1000ms;
+  /*  padding-top : 10px; */
+    cursor : pointer;
+}
+
+#ColdDrink_Desc{  
+/*    background-color : rgb(71, 71, 71);
+    border : 4px double rgb(174, 151, 151); */
+    position : absolute;
+    left : 0px; top: -110%; width : 100%;
+    transition-property : top;
+    transition-duration : 500ms;
+    z-index : 1;
+}
+
+
+
+/*
+
+    ************************ Napoje Gorące menu wysuwane****************************
+
+
+*/
+
+
+span.HotDrink_Button{
+    position : absolute;
+    text-align : center;
+    vertical-align : text-bottom;
+    color : rgb(242, 237, 237);
+    font-family :'Times New Roman', Times, serif;
+    Font-size : 20px;
+    left : 40%; top: 40px; width : 25%;
+    transition-property : color;
+    transition-duration : 1000ms;
+    cursor : pointer;
+}
+
+#HotDrink_Desc{  
+    /*
+    background-color : rgb(71, 71, 71);
+    border : 4px double rgb(174, 151, 151);
+    */
+    position : absolute;
+    left : 0px; top: -110%; width : 100%;
+    transition-property : top;
+    transition-duration : 500ms;
+    z-index : 1;
+}
+
+
+
+
+/*
+
+    ************************ Zestawy Obiadowe menu wysuwane****************************
+
+
+*/
+
+
+span.Diner_Button{
+    position : absolute;
+    text-align : center;
+    vertical-align : text-bottom;
+    color : rgb(242, 237, 237);
+    font-family :'Times New Roman', Times, serif;
+    Font-size : 20px;
+    left : 65%; top: 40px; width : 30%;
+    transition-property : color;
+    transition-duration : 1000ms;
+    cursor : pointer;
+}
+
+#Diner_Desc{  
+  /*  
+    background-color : rgb(71, 71, 71);
+    border : 4px double rgb(174, 151, 151);
+    */
+    position : absolute;
+    left : 0px; top: -110%; width : 100%;
+    transition-property : top;
+    transition-duration : 500ms;
+    z-index : 1;
+}
+
+
+
+/*
+
+
+    ************************Menu wysuwne definicja tabel*****************************
+
+
+*/
+
+
+
+
+#MButton_ItemL{
+ /*   border : 0px solid rgb(106, 90, 90); */
+/*  background-color : rgb(106, 90, 90); */
+    width : 80%; height : 26px;
+    text-align : left;
+    color : rgb(242, 237, 237);
+    font-family :"Arial";
+    font-size : 20px;
+    padding : 10px;
+}
+#MButton_ItemR{
+ /*   border : 0px solid rgb(106, 90, 90); */
+/*  background-color : rgb(106, 90, 90); */
+    width : 20%; height : 26px;
+    text-align : right;
+    color : rgb(242, 237, 237);
+    font-family :"Arial";
+    font-size : 20px;
+    padding : 10px;
+}
+
+#MButton_ItemC{
+    border : 0px solid rgb(6, 232, 58);
+ /*   background-color : rgb(71, 71, 71);*/
+    width : 80%; height : 26px;
+    text-align : left;
+    color : rgb(242, 237, 237);
+    font-family : "Arial";
+    font-size : 20px;
+    padding : 10px;
+}
+
+
+/*
+
+
+    ************************Tekst 2 *****************************
+
+
+*/
+
+div.Text2{
+    position : relative;
+    left : 0px; top : 71%; width : 100%; height : 650px;
+    border : 0px solid red;
+}
+
+span.Text_Header2{
+    position : absolute;
+    left : 0%; top : 50px; width : 100%;
+    text-align : center;
+    font-family: "BernardoModaContrast";
+    font-style : italic;
+    text-shadow : 0px 10px 20px rgb(245, 3, 245);
+    font-size : 64px;
+    color : rgb(109, 9, 241);
+}
+
+
+span.Text2_1{
+    position : absolute;
+    left : 15%; top : 170px; width : 80%;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 32px;
+    color : rgb(37, 32, 37);
+}
+
+span.Text2_2{
+    position : absolute;
+    left : 15%; top : 170px; width : 80%;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 32px;
+    color : rgb(37, 32, 37);
+}
+
+span.Text2_3{
+    position : absolute;
+    left : 0%; top : 320px; width : 100%;
+    text-align : center;
+    font-family: "BernardoModaContrast";
+    font-size : 46px;
+    font-style : italic;
+    color : rgb(109, 9, 241);
+    text-shadow : 0px 10px 20px rgb(109, 9, 241);
+}
+
+span.Text2_4{
+    position : absolute;
+    left : 15%; top : 410px; width : 80%;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 32px;
+    color : rgb(81, 59, 81);
+}
+
+span.Text2_5{
+    position : absolute;
+    left : 15%; top : 480px; width : 80%;
+    text-align : left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 32px;
+    color : rgb(81, 59, 81);
+}
+
+div.Text2 a{
+    position : absolute;
+    left : 18%; top : 520px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size : 46px;
+    font-style : italic;
+    color : rgb(109, 9, 241);
+    text-decoration : none;
+    cursor : pointer;
+    transition : color 1500ms;
+}
+
+
+
+/*
+
+    ************************ Footer ****************************
+
+
+*/
+
+footer.footer{
+
+    position : relative;
+    left : 0px; top : 71%; width : 100%; height : 350px;
+    border-top :4px solid rgb(255, 132, 0);
+    background-color : rgb(0, 0, 0);
+
+}
+
+
+footer.footer img{
+
+    position : absolute;
+    top:25px; left : 3%; width : 20%; height : 160px;
+}
+
+#Address{
+    position : absolute;
+    left : 35%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Adres_H{
+    position : absolute;
+    left : 30%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 32px;
+    color : rgb(230, 134, 18);
+
+}
+
+
+span.Adres{
+    position : absolute;
+    left : 30%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 22px;
+    color : rgb(203, 192, 177);
+    
+}
+
+a.LinkGoogle{
+
+    position : absolute;
+    border : 0px solid red;
+    left : 30%; top :290px; width : 38%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 22px;
+    color : rgb(210, 183, 146);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+
+#Tel{
+    position : absolute;
+    left : 75%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Tel_H{
+    position : absolute;
+    left : 70%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 32px;
+    color : rgb(230, 134, 18);
+
+}
+
+a.Tel{
+
+    position : absolute;
+    left : 70%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+a.Kom{
+
+    position : absolute;
+    left : 70%; top :230px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
