@@ -1,5 +1,5 @@
 div.Logo{
-    position : absolute; z-index : 0; left : 0.75%; top : 0px; width : 98.5%; height : 80%;
+    position : absolute; z-index : 1; left : 0.75%; top : 0px; width : 98.5%; height : 80%;
 }
 
 img.LogoBckg{
@@ -73,6 +73,7 @@ div.MainMenu{
     border : 0px solid red;
     left : 75%; top : 70px; width : 24%; height : 240px; 
     overflow : hidden;
+    z-index : 2;
 }
 
 
@@ -113,6 +114,7 @@ div.BodyText1{
     border-top-right-radius : 12px;
     transition-property : height;
     transition-duration : 500ms;
+    z-index : 0;
 
 }
 
