@@ -1,0 +1,192 @@
+<!DOCTYPE HTML5 PUBLIC
+"--\\W3C\\HTML5\\PL">
+
+
+<HTML>
+    <HEAD>
+
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src = "Script/Prom.js" type = "Text/JavaScript"></script> 
+
+        <link rel = "stylesheet" href = "Stylesheet/StyleFonts.css" type = "Text/CSS">
+
+        <link href='http://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cormorant+Upright&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style.css" type = "Text/CSS" media = "ALL AND (width > 1200px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_1200.css" type = "Text/CSS" media = "ALL AND (width <= 1200px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_1000.css" type = "Text/CSS" media = "ALL AND (width <= 1000px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_800.css" type = "Text/CSS" media = "ALL AND (width <= 800px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_600.css" type = "Text/CSS" media = "ALL AND (width <= 600px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_480.css" type = "Text/CSS" media = "ALL AND (width <= 480px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_390.css" type = "Text/CSS" media = "ALL AND (width <= 390px)">
+        <link rel = "stylesheet" href = "Stylesheet/Prom/Style_320.css" type = "Text/CSS" media = "ALL AND (width <= 320px)">
+
+
+        <TITLE>
+            Promocje Piccante
+        </TITLE>
+    </HEAD>
+
+    <BODY>
+        
+        <div class = "Logo">
+            <img draggable="false" src = "Bmp/Header/3.jpg" class = "LogoBckg">
+            <img draggable="false" src = "Bmp/Body/Logo.png" class = "LogoImg">
+
+            <!--                                                                                        
+
+
+            *****************************************Główne Menu Wysuwane *****************************************
+
+
+            -->
+
+
+            <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+                <span class = "MainMenuButt1"></span>
+                <span class = "MainMenuButt2"></span>
+                <span class = "MainMenuButt3"></span>
+
+            </div>
+
+            <div class ="MainMenu">
+
+                <table class = "MainMenuTable">
+
+                    <tr>
+                        <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
+                    </tr>
+
+                    <tr>
+
+                        <td id="MenuPizz" style = "border-top : 3px solid rgb(239, 103, 6);" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                    </tr>
+
+                    <tr>
+                        <td id="ZestOb" onclick = "MenuItemMouseClick('ZestOb')" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                    </tr>
+
+                    <tr>
+                        <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                    </tr>
+
+                </table>
+
+            </div>   
+
+        </div>
+
+        <div class = "Prom">
+
+            <span class = "PromHeader">
+
+                W naszej pizzeri możesz napotkać wspaniałe promocje
+
+            </span>
+
+        </div>
+
+        <div class = "Prom2">
+
+            <span class = "PromText1">
+
+                Przy zakupie trzech dużych pizz 
+                jedna mała "Presto" gratis !!!
+                
+            </span>
+
+            <table class =  "tableProm">
+
+                <tr>
+
+                    <td class = "tableProm1" colspan = "3">
+
+                        W poniedziałki<br>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class = "tableProm2">
+
+                        <b>  Duża </b> 
+                        
+                    </td>
+
+                    <td class = "tableProm1">
+
+                        pizza w cenie
+                            
+                    </td>
+
+            
+                    <td class = "tableProm3">
+
+                        <b> małej ! </b>
+                        
+                    </td>
+
+                 </tr>
+
+            </table>
+
+            <span class = "PromText2">
+                *Promocje nie łączą się*
+            </span>
+
+        </div>
+
+
+     <!--   
+
+
+        *****************************************Dolna Stopka *****************************************
+
+
+
+    -->
+    
+    
+        <footer class = "footer" id = "footer">
+            <img src = "Bmp/Body/Logo.png">
+    
+            <span class = "Adres_H">
+                Nasz Adres
+            </span>
+    
+            <span class = "Adres">
+            Opole Metalchem Oświęcimska 98<br>
+                (Pawilon Biedronki)
+            </span>
+    
+            <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
+                Zobacz na GoogleMaps
+            </a>
+    
+            <img src = "icons/Address.png" id = "Address">
+    
+            <span class = "Tel_H">
+                Numery tel.
+            </span>
+    
+            <img src = "icons/Tel.png" id = "Tel"> 
+    
+            <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
+            <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
+    
+        </footer>
+
+
+    </BODY>
+</HTML>

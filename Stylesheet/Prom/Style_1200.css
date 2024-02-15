@@ -1,0 +1,299 @@
+div.Logo{
+    position : absolute; z-index : 1; left : 0.75%; top : 0px; width : 98.5%; height : 80%;
+}
+
+img.LogoBckg{
+    position : relative;
+    left : 0px; top : 0px; width : 100%; height : 100%
+}
+
+img.LogoImg{
+    position : absolute;
+    left : 2%; top : 10px; width : 25%; height : 160px;
+}
+
+/*
+
+    ************************ Głowne menu wysuwane Przycisk****************************
+
+
+*/
+
+
+
+
+div.MainMenuButton{
+
+    position : absolute;                                            
+    border : 0px solid rgb(227, 220, 220);
+    left : 95%; top: 20px; width : 3%; height : 30px;
+    cursor : pointer;
+}
+
+span.MainMenuButt1{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 0px; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt2{
+
+    position : absolute;
+    background-color : rgb(243, 241, 235);
+    left : 0%; top: 38%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt3{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 76%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+/*
+
+    ************************ Głowne menu wysuwane Tabela****************************
+
+
+*/
+
+div.MainMenu{
+
+    position : absolute;
+    border : 0px solid red;
+    left : 75%; top : 70px; width : 24%; height : 240px; 
+    overflow : hidden;
+    z-index : 2;
+}
+
+
+table.MainMenuTable{
+
+    position : absolute;
+    background-color : rgb(13, 13, 13); 
+    left : 110%; top : -110%; width : 100%; height : 100%; 
+    transition : left 500ms, top 500ms;   
+    cursor : pointer; 
+
+}
+
+table.MainMenuTable td{
+
+    border  : 0px;
+    color : rgb(243, 235, 235);
+    font-family : "Tahoma";
+    font-size : 24px;
+    text-align : center;
+    padding : 5px;
+}
+
+
+
+/*
+
+    ************************ Text1 Header****************************
+
+
+*/
+
+
+div.Prom{
+    position : relative;
+    border-top : 4px solid rgb(239, 137, 12);
+    border-bottom : 4px solid rgb(239, 137, 12);
+    left : 0px; top : 95%; width : 100%; height : 180px;
+    background-color : rgb(12, 3, 3);
+    z-index : 2;
+}
+
+span.PromHeader{
+    position : absolute;
+    left :0px; top : 40px; width : 100%;
+    font-family: 'Paprika', sans-serif;
+    font-size : 40px;
+    text-align : center;
+    color :rgb(239, 137, 12);
+    text-shadow : 15px 15px 15px rgb(225, 70, 9);
+    
+}
+
+/*
+
+    ************************ Text1 prom****************************
+
+
+*/
+
+div.Prom2{
+    position : relative;
+    border-bottom : 4px solid rgb(239, 137, 12);
+    left : 0px; top : 95%; width : 100%; height : 640px;
+}
+
+span.PromText1{
+    position : absolute;
+    left : 15%; top : 80px; width : 70%;
+    font-family: 'Paprika', sans-serif;
+    font-size : 40px;
+    text-align : center;
+    color :rgb(107, 136, 186);
+    text-shadow : 15px 15px 15px rgb(117, 7, 191);
+
+}
+
+table.tableProm
+{
+    position : absolute;
+    left : 5%; top : 320px; width : 90%;
+}
+
+td.tableProm1{
+    border : 0px solid red;
+    font-family: 'Poppins', sans-serif;
+    font-size : 50px;
+    text-align : center;
+    color :rgb(126, 14, 237);
+    word-spacing : 18px;
+    letter-spacing : 5px;
+}
+
+
+td.tableProm2{
+    border : 0px solid red;
+    font-family: 'Poppins', sans-serif;
+    font-size : 50px;
+    text-align : right;
+    color :rgb(228, 16, 221);
+    letter-spacing : 5px;
+    font-style : italic;
+}
+
+
+
+td.tableProm3{
+    border : 0px solid red;
+    font-family: 'Poppins', sans-serif;
+    font-size : 50px;
+    text-align : left;
+    color :rgb(228, 16, 221);
+    letter-spacing : 5px;
+    font-style : italic;
+}
+
+span.PromText2{
+    position :absolute;
+    left : 30%; top : 550px; width : 70%;
+    font-family: 'Poppins', sans-serif;
+    font-size : 36px;
+    text-align : right;
+    color :rgb(218, 149, 89);
+    letter-spacing : 5px;
+    font-style : italic;
+}
+
+
+/*
+
+    ************************ Footer ****************************
+
+
+*/
+
+footer.footer{
+
+    position : relative;
+    left : 0px; top : 95%; width : 100%; height : 350px;
+    border-top :4px solid rgb(255, 132, 0);
+    background-color : rgb(0, 0, 0);
+
+}
+
+
+footer.footer img{
+
+    position : absolute;
+    top:25px; left : 3%; width : 20%; height : 160px;
+}
+
+#Address{
+    position : absolute;
+    left : 35%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Adres_H{
+    position : absolute;
+    left : 30%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 36px;
+    color : rgb(230, 134, 18);
+
+}
+
+
+span.Adres{
+    position : absolute;
+    left : 30%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    
+}
+
+a.LinkGoogle{
+
+    position : absolute;
+    left : 30%; top :290px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(210, 183, 146);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+
+#Tel{
+    position : absolute;
+    left : 75%; top: 30px; width : 70px; height : 70px;
+}
+
+span.Tel_H{
+    position : absolute;
+    left : 70%; top : 120px; width : 30%; height : 50px;
+    font-family: 'Peralta', sans-serif;
+    font-size : 36px;
+    color : rgb(230, 134, 18);
+
+}
+
+a.Tel{
+
+    position : absolute;
+    left : 70%; top :170px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+
+a.Kom{
+
+    position : absolute;
+    left : 70%; top :230px; width : 30%; height : 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size : 24px;
+    color : rgb(203, 192, 177);
+    text-decoration : none;
+    transition : color 1500ms;
+}
+

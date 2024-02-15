@@ -121,7 +121,10 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Diner.html";
     }
-    
+    else if(ItemText=='Prom')
+    {
+        window.location.href = "Prom.html";
+    }
 
 }
 
