@@ -183,7 +183,7 @@ div.Menu{
 div.Meals{
     position : absolute;
     border : 0px solid rgb(241, 9, 9);
-    left : 25%; top: 80px; width : 50%;
+    left : 25%; top: 100px; width : 50%;
     border-top : 6px solid rgb(167, 160, 160);
     border-radius : 4px;
     overflow : hidden;
@@ -199,7 +199,7 @@ span.Salats_Button{
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
     Font-size : 12px;
-    left : 1%; top: 10px; width : 15%;
+    left : 1%; top: 0px; width : 15%;
     transition-property : color;
     transition-duration : 1000ms;
    /* padding-top : 10px; */
@@ -233,7 +233,7 @@ span.ColdDrink_Button{
     vertical-align : text-bottom;
     font-family :'Times New Roman', Times, serif;
     Font-size : 12px;
-    left : 1%; top: 26px; width : 24%;
+    left : 1%; top: 25px; width : 24%;
     transition-property : color;
     transition-duration : 1000ms;
   /*  padding-top : 10px; */
@@ -267,7 +267,7 @@ span.HotDrink_Button{
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
     Font-size : 12px;
-    left : 1%; top: 42px; width : 30%;
+    left : 1%; top: 50px; width : 30%;
     transition-property : color;
     transition-duration : 1000ms;
     cursor : pointer;
@@ -303,7 +303,7 @@ span.Diner_Button{
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
     Font-size : 12px;
-    left : 1%; top: 60px; width : 30%;
+    left : 1%; top: 75px; width : 30%;
     transition-property : color;
     transition-duration : 1000ms;
     cursor : pointer;
@@ -508,7 +508,7 @@ a.LinkGoogle{
 
     position : absolute;
     border : 0px solid red;
-    left : 25%; top :270px; width : 43%; height : 50px;
+    left : 25%; top :240px; width : 43%; height : 50px;
     font-family: 'Poppins', sans-serif;
     font-size : 17px;
     color : rgb(210, 183, 146);

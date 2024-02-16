@@ -74,7 +74,7 @@ div.MainMenu{
     border : 0px solid red;
     left : 189px; top : 70px; width : 130px; height : 180px; 
     overflow : hidden;
-    z-index : 2;
+    z-index : 3;
 }
 
 
@@ -113,7 +113,7 @@ div.Prom{
     border-bottom : 4px solid rgb(239, 137, 12);
     left : 0px; top : 220px; width : 320px; height : 130px;
     background-color : rgb(12, 3, 3);
-    z-index : 2;
+    z-index : 0;
 }
 
 span.PromHeader{
@@ -125,7 +125,6 @@ span.PromHeader{
     text-align : center;
     color :rgb(239, 137, 12);
     text-shadow : 15px 15px 15px rgb(225, 70, 9);
-    
 }
 
 /*
