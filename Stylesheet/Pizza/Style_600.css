@@ -20,7 +20,7 @@ div.Logo{
     position : absolute;
     border : 0px solid red;
     left : 0px; top : 110px; width : 100%;
-    font-family : 'BerkshireSwashRegular';
+    font-family: 'Berkshire Swash', sans-serif;
     font-style : italic;
     font-size : 42px;
     color : rgb(1, 1, 1);
@@ -153,7 +153,7 @@ span.MenuHeader{
     position : absolute;
     left : 0px; top : 30px; width : 100%;
     text-align : center;
-    font-family : "BerkshireSwashRegular";
+    font-family: 'Berkshire Swash', sans-serif;
     font-size : 48px;
     color : rgb(239, 103, 6);
     text-shadow : 20px 30px 40px rgb(214, 174, 145);
@@ -229,7 +229,7 @@ td.Opis{
 
 td.Stopka{
     border : 0px solid green; 
-    font-family : "BerkshireSwashRegular";
+    font-family: 'Berkshire Swash', sans-serif;
     font-size : 54px;
     color : rgb(239, 103, 6);
     text-align : center;
