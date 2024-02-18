@@ -90,6 +90,10 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Prom.html";
     }
+    else if(ItemText=='Pizza')
+    {
+        window.location.href = "Pizza.html";
+    }
 
 }
 

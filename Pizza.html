@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC
+"--\\W3C\\DTD HTML5\\PL">
+
+
+<HTML>
+    <HEAD>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script type="Text/JavaScript" src="Script/Data.js"></script>
+        <script type="Text/JavaScript" src="Script/Pizza.js"></script>
+
+        <link href='https://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Courgette&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Cormorant+Upright&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link rel = "stylesheet" href="StyleSheet/StyleFonts.css" type = "Text/CSS">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style.css" type="Text/CSS" media = "ALL AND (width > 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_1200.css" type="Text/CSS" media = "ALL AND (width <= 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_1000.css" type="Text/CSS" media = "ALL AND (width <= 1000px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_800.css" type="Text/CSS" media = "ALL AND (width <= 800px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_600.css" type="Text/CSS" media = "ALL AND (width <= 600px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_480.css" type="Text/CSS" media = "ALL AND (width <= 480px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_390.css" type="Text/CSS" media = "ALL AND (width <= 390px)">
+
+        <link rel="stylesheet" href="Stylesheet/Pizza/Style_320.css" type="Text/CSS" media = "ALL AND (width <= 330px)">
+
+
+        <TITLE>
+
+            Pizzeria Piccante menu pizz
+
+        </TITLE>
+
+    </HEAD>
+
+    <BODY onresize = "BodyResize()">
+
+        <div class = "main">
+
+            <div class = "Logo">
+
+                <img draggable="false" src = "Bmp/Body/Logo.png" id = "LogoI">
+
+                <img draggable="false" onload = "ImgLoad()" src = "Bmp/Header/1.jpg" id = "LogoBckg">
+                
+                <span id = "Text_Header">
+
+                </span>
+
+
+                <!--                                                                                        
+
+
+                *****************************************Główne Menu Wysuwane *****************************************
+
+
+
+                -->
+
+
+                <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+                    <span class = "MainMenuButt1"></span>
+                    <span class = "MainMenuButt2"></span>
+                    <span class = "MainMenuButt3"></span>
+
+                </div>
+
+                <div class ="MainMenu">
+
+                    <table class = "MainMenuTable">
+
+                        <tr>
+                            <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="ZestOb" style = "border-top : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('ZestOb')" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            
+            </div>
+
+            <!-- <div class = "PizzaMenu">
+                    
+                <img class="PizzaMenu" src = "Bmp/Body/TableFrame.jpg">
+
+                <span class = "MenuHeader">Nasze  Menu</span>
+
+                <table class = "MenuP" >
+
+                </table>
+                
+
+            </div> -->
+
+            <!-- <div class = "PizzaMenu">
+                    
+                <img class="PizzaMenu" src = "Bmp/Body/TableFrame.jpg">
+
+                <span class = "MenuHeader">Nasze  Menu</span>
+
+                <table class = "MenuP" cellspacing="20px" >
+
+                </table>
+                
+
+            </div> -->
+
+        </div> 
+    
+
+    </BODY>
+
+</HTML>

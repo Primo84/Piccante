@@ -79,6 +79,10 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Diner.html";
     }
+    else if(ItemText=='Pizza')
+    {
+        window.location.href = "Pizza.html";
+    }
 
 }
 

@@ -26,7 +26,7 @@
 
         <link rel = "stylesheet" href="StyleSheet/StyleFonts.css" type = "Text/CSS">
 
-        <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS">
+        <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS" media = "ALL AND (width > 1200px)">
 
         <link rel="stylesheet" href="Stylesheet/Style_1200.css" type="Text/CSS" media = "ALL AND (width <= 1200px)">
 
@@ -60,6 +60,7 @@
         </span>
 
         <div id = "T1">
+            
             <img draggable="false" src="Bmp/Header/Text/L_P.png" id = "Text_P" class="Text_Logo_P">
             <img draggable="false" src="Bmp/Header/Text/L_I.png" id = "Text_i" class="Text_Logo">
             <img draggable="false" src="Bmp/Header/Text/L_C1.png" id = "Text_c1" class="Text_Logo">
@@ -101,7 +102,7 @@
 
                  <tr>
 
-                    <td id="MenuPizz" style = "border-top : 1px solid rgb(179, 115, 31)" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                    <td id="MenuPizz" style = "border-top : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
                 </tr>
 
                 <tr>
@@ -117,7 +118,7 @@
                 </tr>
 
                 <tr>
-                    <td id="Kontakt" style = "border-bottom : 1px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                    <td id="Kontakt" style = "border-bottom : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
                 </tr>
 
             </table>

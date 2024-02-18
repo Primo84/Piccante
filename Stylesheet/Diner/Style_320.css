@@ -108,7 +108,7 @@ table.MainMenuTable td{
 div.BodyText1{
     position : relative;
     border : 0px solid red;
-    left : -6px; top : 194px;  width : 320px; height : 350px;
+    left : -6px; top : 194px;  width : 320px; height : 400px;
     background-color : rgb(2, 6, 34); 
     z-index : 0;
     border-top-left-radius : 2px;
@@ -135,7 +135,7 @@ span.HeaderText1_2{
     padding : 2px;
     left : 0px; top : 80px; width : 100%;
     font-family: "BernardoModaContrast";
-    font-size : 18px;
+    font-size : 24px;
     text-align : center; font-style : italic;
     color :rgb(107, 136, 186);
 }
@@ -144,10 +144,10 @@ span.Text1{
     position :absolute;
     border-bottom : 3px solid rgb(107, 136, 186);
     padding : 2px;
-    left : 25%; top : 120px; width : 50%;
+    left : 5%; top : 120px; width : 90%;
     text-align : left;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size : 12px;
+    font-size : 16px;
     color :rgb(107, 136, 186);
 }
 

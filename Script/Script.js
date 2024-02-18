@@ -59,9 +59,9 @@ function LogoAnim()
 
     if(TIndex==8)
     {
-      //  document.getElementById("Text_Header").style.visibility = "visible";
+      
         $('#Text_Header').fadeIn(1000).css("color", "rgb(179, 115, 31)");
-    //    document.getElementById("Text_Header").style.color = "rgb(179, 115, 31)";
+
 
         clearTimeout(IntervalId);
     }
@@ -124,6 +124,10 @@ function MenuItemMouseClick(ItemText)
     else if(ItemText=='Prom')
     {
         window.location.href = "Prom.html";
+    }
+    else if(ItemText=='Pizza')
+    {
+        window.location.href = "Pizza.html";
     }
 
 }
@@ -282,11 +286,15 @@ function GoogleLinkLeave(EV)
 }
 
 
-function LoadTables()              
-{
+/*
+
+             Load image events
 
 
-};
+*/
+
+
+
 
 function ImgLoad()
 {

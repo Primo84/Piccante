@@ -1,0 +1,227 @@
+#LogoBckg{
+    z-index : 0; position : absolute; left:0px; width : 100%; height : 90%; min-width : 320px; min-height :604px;  /* Header Background */
+}
+
+#LogoI{
+    position : absolute; left : 1%; top : 10px; width : 35%; height : 100px; min-width : 112px;   /*  Hedaer Bmp on left corner */
+}
+
+
+#Text_Header{                                                                         /* Text in header on right corner */
+    z-index : 0;
+    position : absolute;
+    border : 0px solid red;
+    left : 15px; top : 150px; width : 290px;
+    font-family : 'BerkshireSwashRegular';
+    font-style : italic;
+    font-size : 44px;
+    color : rgb(1, 1, 1);
+    text-align : center;
+    transition-property : color;
+    transition-duration : 5000ms;
+    display : none;
+    letter-spacing : 0px;
+
+}
+
+
+/*
+
+    ************************ Głowne menu wysuwane Przycisk****************************
+
+
+*/
+
+
+
+
+div.MainMenuButton{
+
+    position : absolute;                                            
+    border : 0px solid rgb(227, 220, 220);
+    left : 288px; top: 20px; width : 28.8px; height : 30px;
+    cursor : pointer;
+}
+
+span.MainMenuButt1{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 0px; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt2{
+
+    position : absolute;
+    background-color : rgb(243, 241, 235);
+    left : 0%; top: 38%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+span.MainMenuButt3{
+
+    position : absolute;
+    background-color : rgb(243, 235, 235);
+    left : 0%; top: 76%; width : 100%; height : 24%;
+    transition-property : background-color;
+    transition-duration : 1000ms;
+
+}
+
+
+/*
+
+    ************************ Głowne menu wysuwane Tabela****************************
+
+
+*/
+
+div.MainMenu{
+
+    position : absolute;
+    border : 0px solid red;
+    left : 190px; top : 70px; width : 130px; height : 180px; 
+    overflow : hidden;
+    z-index : 2;
+}
+
+
+table.MainMenuTable{
+
+    position : absolute;
+    background-color : rgb(13, 13, 13); 
+    left : 110%; top : -110%; width : 100%; height : 100%; 
+    transition : left 500ms, top 500ms;   
+    cursor : pointer; 
+
+}
+
+table.MainMenuTable td{
+
+    border  : 0px;
+    color : rgb(243, 235, 235);
+    font-family : "Tahoma";
+    font-size : 11px;
+    text-align : center;
+
+}
+
+
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
+}
+
+
+/*
+
+    ************************ Menu Pizz****************************
+
+
+*/
+
+
+div.PizzaMenu
+{
+    position : relative;
+    border : 2px solid rgb(197, 178, 178);
+    left :0px; top : 122%; width : 98%; min-width : 320px;
+    z-index : 1;
+}
+
+img.PizzaMenu{
+    position : absolute;
+    left : 0px; top : 0px; width : 100%; height : 100%;
+}
+
+span.MenuHeader{
+    position : absolute;
+    left : 0px; top : 30px; width : 100%;
+    text-align : center;
+    font-family : "BerkshireSwashRegular";
+    font-size : 38px;
+    color : rgb(239, 103, 6);
+    text-shadow : 20px 30px 40px rgb(214, 174, 145);
+}
+
+
+table.MenuP{
+    position : absolute; 
+    left : 5%; top :100px; width : 90%;
+    border :0px solid red;
+}
+
+
+td.Name{
+
+    border : 0px solid white;
+    width : 50%;
+    font-family : "Peralta";
+    font-size : 12px;
+    color : rgb(239, 103, 6);
+    text-align : left;
+ 
+}
+td div{
+    position : relative;
+    border : 0px solid green; 
+    left : 0px; top : 0px; width : 100%; height : 12px;
+    overflow : hidden;
+}
+
+td.Rozmiar{
+
+    /* border-left : 2px solid white; */
+    font-family : "Peralta";
+    font-size : 10px;
+    color : rgb(205, 180, 78);
+    text-align : center;
+    vertical-align : bottom;
+    padding-bottom :0px;
+}
+
+td.Cena{
+
+    /* border-left : 2px solid white; */
+    font-family : "Peralta";
+    font-size : 10px;
+    color : rgb(205, 180, 78);
+    text-align : center;
+    vertical-align : top;
+}
+td.Cena1{
+
+    border-right : 0px solid white;
+    font-family : "Peralta";
+    font-size : 10px;
+    color : rgb(205, 180, 78);
+    text-align : center;
+    vertical-align : top;
+    padding-top :0px;
+}
+
+td.Opis{
+
+    border : 0px solid white;
+    font-family: "Peralta";
+    font-size : 10px;
+    color : rgb(214, 174, 145);
+    width : 50%;
+    text-align : left;
+    font-style : italic;
+
+}
+
+td.Stopka{
+    border : 0px solid green; 
+    font-family : "BerkshireSwashRegular";
+    font-size : 34px;
+    color : rgb(239, 103, 6);
+    text-align : center;
+}

@@ -109,7 +109,7 @@ table.MainMenuTable td{
 div.BodyText1{
     position : relative;
     border : 0px solid red;
-    left : 0px; top : 50.5%;  width : 100%; height : 350px;
+    left : 0px; top : 50.5%;  width : 100%; height : 400px;
     background-color : rgb(2, 6, 34); 
     border-top-left-radius : 5px;
     border-top-right-radius : 5px;
@@ -124,7 +124,7 @@ span.HeaderText1{
     position :absolute;
     left : 0px; top : 10px; width : 100%;
     font-family: 'Paprika', sans-serif;;
-    font-size : 16px;
+    font-size : 20px;
     text-align : center;
     color :rgb(107, 136, 186);
     text-shadow : 15px 15px 15px rgb(117, 7, 191);
@@ -136,7 +136,7 @@ span.HeaderText1_2{
     padding : 2px;
     left : 0px; top : 80px; width : 100%;
     font-family: "BernardoModaContrast";
-    font-size : 18px;
+    font-size : 26px;
     text-align : center; font-style : italic;
     color :rgb(107, 136, 186);
 }
@@ -145,10 +145,10 @@ span.Text1{
     position :absolute;
     border-bottom : 3px solid rgb(107, 136, 186);
     padding : 2px;
-    left : 25%; top : 120px; width : 50%;
+    left : 5%; top : 120px; width : 90%;
     text-align : left;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size : 12px;
+    font-size : 16px;
     color :rgb(107, 136, 186);
 }
 
