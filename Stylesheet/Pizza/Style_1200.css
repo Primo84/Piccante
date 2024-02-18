@@ -1,9 +1,17 @@
+div.Logo{
+    border : 0px solid yellow;
+    z-index : 1; position : absolute; left : 0px; top : 0px; width :100%; height : 130%;
+}
+
 #LogoBckg{
-    z-index : 0; position : absolute; left:0px; width : 100%; height : 130%;  /* Header Background */
+    position : relative;
+    left : 0px; top : 0px; width : 100%; height : 100%;
 }
 
 #LogoI{
-    position : absolute; left : 1%; top : 10px; width : 20%; height : 180px; min-width : 160px   /*  Hedaer Bmp on left corner */
+    position : absolute;
+    left : 2%; top : 10px; width : 25%; height : 160px;
+    z-index : 1;
 }
 
 

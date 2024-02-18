@@ -205,27 +205,27 @@ function BodyResize()
     let i;
     let DivId="";
     let TableId="";
-    let sizeY;
-    let sizeX;
+    let SY;
 
     sizeX=window.innerWidth;
 
-    if(sizeX > 1000)
-        DivTop = 133;
-    else if(sizeX > 800)
-        DivTop = 122;
+    
+    if(sizeX > 800)
+        footerSize = 150;
     else if(sizeX > 480)
     {
-        DivTop = 102;
         footerSize = 80;
     }
     else
     {
-        DivTop = 100;
         footerSize = 50;
     }
 
-    $('div.PizzaMenu').css('top',DivTop.toString()+'%');
+    SY = parseInt(($('div.Logo').css('height')).slice(0,-2),10);
+
+    SY+=30;
+
+    $('div.PizzaMenu').css('top',SY.toString()+'px');
 
     for(i=0; i< TableCount; i++)
     {
@@ -343,18 +343,10 @@ function BodyTimeOut()
 
 $(document).ready(() =>{
 
-    let sizeX;
 
-    sizeX=window.innerWidth;
+    DivTop = parseInt(($('div.Logo').css('height')).slice(0,-2),10);
 
-    if(sizeX > 1000)
-        DivTop = 133;
-    else if(sizeX > 800)
-        DivTop = 122;
-    else if(sizeX > 480)
-        DivTop = 102;
-    else
-        DivTop = 100;
+    DivTop+=30;
   
 
 
