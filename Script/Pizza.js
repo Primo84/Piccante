@@ -6,6 +6,7 @@ let namePoint = ". . . . . . . . . . . . . . . . . . . . . . . . . . . .";
 let footerSize = 150;
 let TableCount = 0;
 DivTop = 0;
+let Footer;
 
 
 /*
@@ -238,7 +239,11 @@ function BodyResize()
         sizeY += footerSize;
         $(DivId).css('height', sizeY.toString()+'px');
 
-
+    }
+    if(Footer != null)
+    {
+        $('div.main').append(Footer);
+        Footer=null;
     }
 
 }
@@ -251,7 +256,7 @@ function LoadTables()
 
     let i;
     let AppStr = "";
-    let sizeY
+    let sizeY;
 
     i=0;
     let index=1;
@@ -267,9 +272,6 @@ function LoadTables()
             DivId = "div" + index.toString();
             TableId = "table" + index.toString();
 
-            // if(Count==0)
-            //     AppStr = "<div  style='top : " + DivTop.toString() +"%' class = 'PizzaMenu' id = '" + DivId + "'> <img class='PizzaMenu' src = 'Bmp/Body/TableFrame.jpg'>";
-            // else
             AppStr = "<div class = 'PizzaMenu' id = '" + DivId + "'> <img class='PizzaMenu' src = 'Bmp/Body/TableFrame.jpg'>";
 
             AppStr += "<span class = 'MenuHeader'>Nasze  Menu</span>";
@@ -286,10 +288,6 @@ function LoadTables()
 
         }
 
-            // if(i==0)
-            //     AppStr ="<tr><td class = 'Stopka' colspan = '5'>Nasze Menu</td></tr>";
-            // else 
-            //     AppStr="";
 
         AppStr ="<tr><td class = 'Stopka' colspan = '5'>* * * * *</td></tr>";
         AppStr += " <tr> <td class = 'Name'>"; 
@@ -333,17 +331,14 @@ function Load()
 
 document.onload = Load();
 
-function BodyTimeOut()
-{
-
-    BodyResize();
-
-}
 
 
 $(document).ready(() =>{
 
+   Footer = $('footer.footer');
 
+   $('footer.footer').remove();
+    
     DivTop = parseInt(($('div.Logo').css('height')).slice(0,-2),10);
 
     DivTop+=30;
@@ -353,12 +348,7 @@ $(document).ready(() =>{
     LoadTables();
 
 
-    window.setTimeout(BodyTimeOut,1500);
+    window.setTimeout(BodyResize,1500);
     
-
-    // sizeY = parseInt(($('table.MenuP').css("height")).slice(0,-2),10);
-    // sizeY += parseInt(($('table.MenuP').css("top")).slice(0,-2),10);
-    // sizeY += 290;
-    // $('div.PizzaMenu').css('height', sizeY.toString()+'px');
 
 });

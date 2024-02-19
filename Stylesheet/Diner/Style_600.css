@@ -183,7 +183,7 @@ div.Menu{
 div.Meals{
     position : absolute;
     border : 0px solid rgb(241, 9, 9);
-    left : 25%; top: 100px; width : 50%;
+    left : 10%; top: 120px; width : 80%;
     border-top : 6px solid rgb(167, 160, 160);
     border-radius : 4px;
     overflow : hidden;
@@ -198,8 +198,8 @@ span.Salats_Button{
     vertical-align : text-bottom;
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
-    Font-size : 12px;
-    left : 1%; top: 0px; width : 15%;
+    Font-size : 14px;
+    left : 1%; top: 0px; width : 80%;
     transition-property : color;
     transition-duration : 1000ms;
    /* padding-top : 10px; */
@@ -232,8 +232,8 @@ span.ColdDrink_Button{
     text-align : left;
     vertical-align : text-bottom;
     font-family :'Times New Roman', Times, serif;
-    Font-size : 12px;
-    left : 1%; top: 25px; width : 24%;
+    Font-size : 14px;
+    left : 1%; top: 25px; width : 80%;
     transition-property : color;
     transition-duration : 1000ms;
   /*  padding-top : 10px; */
@@ -266,8 +266,8 @@ span.HotDrink_Button{
     vertical-align : text-bottom;
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
-    Font-size : 12px;
-    left : 1%; top: 50px; width : 30%;
+    Font-size : 14px;
+    left : 1%; top: 50px; width : 80%;
     transition-property : color;
     transition-duration : 1000ms;
     cursor : pointer;
@@ -302,8 +302,8 @@ span.Diner_Button{
     vertical-align : text-bottom;
     color : rgb(242, 237, 237);
     font-family :'Times New Roman', Times, serif;
-    Font-size : 12px;
-    left : 1%; top: 75px; width : 30%;
+    Font-size : 14px;
+    left : 1%; top: 75px; width : 80%;
     transition-property : color;
     transition-duration : 1000ms;
     cursor : pointer;
@@ -341,7 +341,7 @@ span.Diner_Button{
     text-align : left;
     color : rgb(242, 237, 237);
     font-family :"Arial";
-    font-size : 12px;
+    font-size : 16px;
     padding : 4px;
 }
 #MButton_ItemR{
@@ -351,7 +351,7 @@ span.Diner_Button{
     text-align : right;
     color : rgb(242, 237, 237);
     font-family :"Arial";
-    font-size : 12px;
+    font-size : 16px;
     padding : 4px;
 }
 
@@ -362,7 +362,7 @@ span.Diner_Button{
     text-align : left;
     color : rgb(242, 237, 237);
     font-family : "Arial";
-    font-size : 12px;
+    font-size : 16px;
     padding : 4px;
 }
 
