@@ -245,6 +245,13 @@ function BodyResize()
         $('div.main').append(Footer);
         Footer=null;
     }
+    else
+    {
+        SY = parseInt(($(DivId).css('top')).slice(0,-2),10);
+        SY += sizeY + 8;
+        $('footer.footer').css(top, SY.toString() + 'px');
+
+    }
 
 }
 
