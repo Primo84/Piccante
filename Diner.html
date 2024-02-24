@@ -1,11 +1,11 @@
-<!DOCTYPE HTML5 PUBLIC
-"--\\W3C\\HTML5\\PL">
+<!DOCTYPE HTML>
 
 
 <HTML>
     <HEAD>
 
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="content-type" content = "text/html; charset=ISO-8859-2">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -17,15 +17,23 @@
         <link href='https://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cormorant+Upright&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext" rel="stylesheet" type='text/css'>
 
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style.css" type = "Text/CSS" media = "ALL AND (width > 1200px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_1200.css" type = "Text/CSS" media = "ALL AND (width <= 1200px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_1000.css" type = "Text/CSS" media = "ALL AND (width <= 1000px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_800.css" type = "Text/CSS" media = "ALL AND (width <= 800px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_600.css" type = "Text/CSS" media = "ALL AND (width <= 600px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_480.css" type = "Text/CSS" media = "ALL AND (width <= 480px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_390.css" type = "Text/CSS" media = "ALL AND (width <= 390px)">
-        <link rel = "stylesheet" href = "Stylesheet/Diner/Style_320.css" type = "Text/CSS" media = "ALL AND (width <= 320px)">
+        <link rel="stylesheet" href="Stylesheet/Diner/Style.css" type="Text/CSS" media = "ALL AND (min-width : 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_1200.css" type="Text/CSS" media = "ALL AND (min-width : 1000px) AND (max-width : 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_1000.css" type="Text/CSS" media = "ALL AND (min-width : 800px) AND (max-width : 1000px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_800.css" type="Text/CSS" media = "ALL AND (min-width : 600px) AND (max-width : 800px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_600.css" type="Text/CSS" media = "ALL AND (min-width : 480px) AND (max-width : 600px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_480.css" type="Text/CSS" media = "ALL AND (min-width : 390px) AND (max-width : 480px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_390.css" type="Text/CSS" media = "ALL AND (min-width : 330px) AND (max-width : 390px)">
+
+        <link rel="stylesheet" href="Stylesheet/Diner/Style_320.css" type="Text/CSS" media = "ALL AND (max-width : 330px)">
 
 
         <TITLE>
@@ -36,159 +44,170 @@
 
     <BODY onresize = "BodyRezise()">
 
-        <div class = "Logo">
-            
-            <img draggable="false" src = "Bmp/Header/2.jpg" class = "LogoBckg">
-            <img draggable="false" src = "Bmp/Body/Logo.png" class = "LogoImg">
+        <div class = "main">
 
-            <!--                                                                                        
-
-
-            *****************************************GĹĂłwne Menu Wysuwane *****************************************
-
-
-            -->
-
-
-            <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
-
-                <span class = "MainMenuButt1"></span>
-                <span class = "MainMenuButt2"></span>
-                <span class = "MainMenuButt3"></span>
-
-            </div>
-
-            <div class ="MainMenu">
-
-                <table class = "MainMenuTable">
-
-                    <tr>
-                        <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
-                    </tr>
-
-                    <tr>
-
-                        <td id="MenuPizz" style = "border-top : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
-                    </tr>
-
-                    <tr>
-                        <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
-                    </tr>
-
-                    <tr>
-                        <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
-                    </tr>
-
-                    <tr>
-                        <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
-                    </tr>
-
-                </table>
-
-            </div>   
-        </div>
-
-        <div class = "BodyText1">
-
-            <span class = "HeaderText1">
-
-                Poczuj siÄ wyjÄtkowo
-
-            </span>
-
-            <span class = "HeaderText1_2">
-
-                Niezapomniany smak
+            <div class = "Logo">
                 
-            </span>
+                <img draggable="false" src = "Bmp/Header/2.jpg" class = "LogoBckg">
+                <img draggable="false" src = "Bmp/Body/Logo.png" class = "LogoImg">
 
-            <span class = "Text1">
+                <!--                                                                                        
 
-                W naszej restauracji zjesz wyĹmienite obiady.
-                Wszystko przyrzÄdzone z ogromnÄ starannoĹciÄ sprawia, Ĺźe
-                nasze potrawy majÄ wyrazisty smak. 
-                
-            </span>
 
-            <div class = "Menu">
+                *****************************************Główne Menu Wysuwane *****************************************
 
-                <!--
-
-                *****************************************Menu Wysuwane SaĹatki*****************************************
 
                 -->
 
 
+                <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
 
-
-                <span class="Salats_Button" onclick="ShowHide_Menu('Salats_Desc', 'Span.Salats_Button', 'SAĹATKI', 0)" onmouseenter = "MButtMouseEnt('Span.Salats_Button')" onmouseleave = "MButtMouseLeave('Span.Salats_Button')">
-                    SAĹATKI<sub><b>&#187</b></sub>
-                </span>
-
-                <span class="ColdDrink_Button" onclick="ShowHide_Menu('ColdDrink_Desc', 'Span.ColdDrink_Button', 'NAPOJE ZIMNE', 1)" onmouseenter = "MButtMouseEnt('Span.ColdDrink_Button')" onmouseleave = "MButtMouseLeave('Span.ColdDrink_Button')">
-                    NAPOJE ZIMNE<sub><b>&#187</b></sub>
-                </span>
-
-                <span class="HotDrink_Button" onclick="ShowHide_Menu('HotDrink_Desc', 'Span.HotDrink_Button', 'NAPOJE GORÄCE', 2)" onmouseenter = "MButtMouseEnt('Span.HotDrink_Button')" onmouseleave = "MButtMouseLeave('Span.HotDrink_Button')">
-                    NAPOJE GORÄCE<sub><b>&#187</b></sub>
-                </span>
-
-                <span class="Diner_Button" onclick="ShowHide_Menu('Diner_Desc', 'Span.Diner_Button', 'ZESTAWY OBIADOWE', 3)" onmouseenter = "MButtMouseEnt('Span.Diner_Button')" onmouseleave = "MButtMouseLeave('Span.Diner_Button')">
-                    ZESTAWY OBIADOWE<sub><b>&#187</b></sub>
-                </span>
-            
-                <div class ="Meals">
-
-                    <table id = "Salats_Desc">
-                    </table>
-
-                    <table id = "HotDrink_Desc">
-                    </table>
-
-                    <table id = "ColdDrink_Desc">
-                    </table>
-
-                    <table id = "Diner_Desc">
-                    </table>
+                    <span class = "MainMenuButt1"></span>
+                    <span class = "MainMenuButt2"></span>
+                    <span class = "MainMenuButt3"></span>
 
                 </div>
-               
+
+                <div class ="MainMenu">
+
+                    <table class = "MainMenuTable">
+
+                        <tr>
+                            <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
+                        </tr>
+
+                        <tr>
+
+                            <td id="MenuPizz" style = "border-top : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                        </tr>
+
+                    </table>
+
+                </div>   
             </div>
-    
-        </div>
 
-        <div class = "Text2">
+            <div class = "BodyText1">
 
-            <span class = Text_Header2>
-                Danie dnia codziennie inne
-            </span>
+                <span class = "HeaderText1">
 
-            <span class = Text2_1>
+                    Poczuj się wyjątkowo
+
+                </span>
+
+                <span class = "HeaderText1_2">
+
+                    Niezapomniany smak
+                    
+                </span>
+
+                <span class = "Text1">
+
+                    W naszej restauracji zjesz wyśmienite obiady.
+                    Wszystko przyrządzone z ogromną starannością sprawia, że
+                    nasze potrawy mają wyrazisty smak. 
+                    
+                </span>
+
+                <div class = "Menu">
+
+                    <!--
+
+                    *****************************************Menu Wysuwane Sałatki*****************************************
+
+                    -->
+
+
+
+
+                    <span class="Salats_Button" onclick="ShowHide_Menu('Salats_Desc', 'Span.Salats_Button', 'SAŁATKI', 0)" onmouseenter = "MButtMouseEnt('Span.Salats_Button')" onmouseleave = "MButtMouseLeave('Span.Salats_Button')">
+                        SAŁATKI<sub><b>&#187</b></sub>
+                    </span>
+
+                    <span class="ColdDrink_Button" onclick="ShowHide_Menu('ColdDrink_Desc', 'Span.ColdDrink_Button', 'NAPOJE ZIMNE', 1)" onmouseenter = "MButtMouseEnt('Span.ColdDrink_Button')" onmouseleave = "MButtMouseLeave('Span.ColdDrink_Button')">
+                        NAPOJE ZIMNE<sub><b>&#187</b></sub>
+                    </span>
+
+                    <span class="HotDrink_Button" onclick="ShowHide_Menu('HotDrink_Desc', 'Span.HotDrink_Button', 'NAPOJE GORĄCE', 2)" onmouseenter = "MButtMouseEnt('Span.HotDrink_Button')" onmouseleave = "MButtMouseLeave('Span.HotDrink_Button')">
+                        NAPOJE GORĄCE<sub><b>&#187</b></sub>
+                    </span>
+
+                    <span class="Diner_Button" onclick="ShowHide_Menu('Diner_Desc', 'Span.Diner_Button', 'ZESTAWY OBIADOWE', 3)" onmouseenter = "MButtMouseEnt('Span.Diner_Button')" onmouseleave = "MButtMouseLeave('Span.Diner_Button')">
+                        ZESTAWY OBIADOWE<sub><b>&#187</b></sub>
+                    </span>
                 
-                Codziennie z najwiÄkszÄ starannoĹciÄ przyrzÄdzamy przepyszne danie dnia, oraz zupÄ dnia.
-                JeĹli chcesz zjeĹÄ coĹ na szybko zmĂłw naszÄ gorÄcÄ zupÄ. Codziennie inna, ktĂłra z caĹÄ pewnoĹciÄ ci posmakuje.
-                 
-            </span>
+                    <div class ="Meals">
 
-            <span class = Text2_3>
+                        <table id = "Salats_Desc">
+                        </table>
+
+                        <table id = "HotDrink_Desc">
+                        </table>
+
+                        <table id = "ColdDrink_Desc">
+                        </table>
+
+                        <table id = "Diner_Desc">
+                        </table>
+
+                    </div>
                 
-                Zestaw Dnia (zupa dnia + danie dnia)
-    
-            </span>
+                </div>
+        
+            </div>
 
-            <span class = Text2_4>
-                
-                Chesz wiedzieÄ co dziĹ przyrzÄdziliĹmy ? 
-    
-            </span>
+            <div class = "Text2">
 
-            <span class = Text2_5>
-                ZadzwoĹ 
-            </span>
+                <span class = Text_Header2>
+                    Danie dnia codziennie inne
+                </span>
 
-            <a href = "tel:790256292" >kom. 790 256 292</a>
+                <span class = Text2_1>
+                    
+                    Codziennie z największą starannością przyrządzamy przepyszne danie dnia, oraz zupę dnia.
+                    Jeśli chcesz zjeść coś na szybko zmów naszą gorącą zupę. Codziennie inna, która z całą pewnością ci posmakuje.
+                    
+                </span>
 
-        </div>
+                <span class = Text2_3>
+                    
+                    Zestaw Dnia (zupa dnia + danie dnia)
+        
+                </span>
+
+                <span class = Text2_4>
+                    
+                    Chesz wiedzieć co dziś przyrządziliśmy ? 
+        
+                </span>
+
+                <span class = Text2_5>
+                    Zadzwoń 
+                </span>
+
+                <a href = "tel:790256292" >kom. 790 256 292</a>
+
+
+                <img class = "pyszne_pl" src = "Icons/Linker.png">
+
+                <span class = "pyszne_pl">
+
+                    Zamów na pyszne.pl
+
+                </span>
+
+            </div>
 
 <!--                                                                                        
 
@@ -200,34 +219,36 @@
 -->
 
 
-    <footer class = "footer" id = "footer">
-        <img src = "Bmp/Body/Logo.png">
+        <footer class = "footer" id = "footer">
+            <img src = "Bmp/Body/Logo.png">
 
-        <span class = "Adres_H">
-            Nasz Adres
-        </span>
+            <span class = "Adres_H">
+                Nasz Adres
+            </span>
 
-        <span class = "Adres">
-        Opole Metalchem OĹwiÄcimska 98<br>
-            (Pawilon Biedronki)
-        </span>
+            <span class = "Adres">
+            Opole Metalchem Oświęcimska 98<br>
+                (Pawilon Biedronki)
+            </span>
 
-        <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
-            Zobacz na GoogleMaps
-        </a>
+            <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
+                Zobacz na GoogleMaps
+            </a>
 
-        <img src = "icons/Address.png" id = "Address">
+            <img src = "Icons/Address.png" id = "Address">
 
-        <span class = "Tel_H">
-            Numery tel.
-        </span>
+            <span class = "Tel_H">
+                Numery tel.
+            </span>
 
-        <img src = "icons/Tel.png" id = "Tel"> 
+            <img src = "Icons/Tel.png" id = "Tel"> 
 
-        <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
-        <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
+            <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
+            <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
 
-    </footer>
+        </footer>
+
+    </div>
 
     </BODY>
 

@@ -1,6 +1,10 @@
+div.Logo{
+    border : 0px solid yellow;
+    z-index : 1; position : absolute; left : 0px; top : 0px; width :100%; height : 90%; min-width : 320px;
+}
 
 #LogoBckg{
-    z-index : 0; position : relative; left:0px; width : 100%; height : 90%; min-width : 320px; min-height :604px;  /* Header Background */
+    z-index : 0; position : relative; left:0px; width : 100%; height : 100%; /* Header Background */
 }
 
 #LogoI{
@@ -46,7 +50,7 @@ img.Text_Logo{
 
 /*
 
-    ************************ G≈Çowne menu wysuwane Przycisk****************************
+    ************************ G≥owne menu wysuwane Przycisk****************************
 
 
 */
@@ -95,7 +99,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ G≈Çowne menu wysuwane Tabela****************************
+    ************************ G≥owne menu wysuwane Tabela****************************
 
 
 */
@@ -128,6 +132,15 @@ table.MainMenuTable td{
 
 }
 
+
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
+}
+
+
+
 /*
 
     ************************ Top and Under Header****************************
@@ -138,7 +151,7 @@ table.MainMenuTable td{
 div.Under_Header{
     position : relative;
     border : 0px solid green;
-    left :0px; top : 30px; width : 100%; height : 470px; min-width : 320px;
+    left :0px; top : 92%; width : 100%; height : 470px; min-width : 320px;
 }
 
 
@@ -210,13 +223,11 @@ span.Top_timeOpen{
 
 div.TopText{
     position : relative;
-   /* border-image : url("../Bmp/Body/Frames/frame3.png") 40/10px  repeat;*/
-  /*  border-image: linear-gradient(rgb(153, 175, 211), rgb(11, 32, 81)) 5 / 5px; */
     background-origin : data-box;
     background-color : rgb(2, 6, 34);
     border-top-left-radius : 15px;
     border-top-right-radius : 15px;
-    left:0%; top : 50px; width : 100%; height :550px; min-width : 320px;
+    left:0%; top : 92%; width : 100%; height :580px; min-width : 320px;
 
 }
 
@@ -225,7 +236,7 @@ span.Top_Header{
     font-family : "BernardoModaContrast";
     border : 0px solid yellow;
     color : rgb(107, 136, 186);
-    top : 45px; left :10%; width : 70%;
+    top : 45px; left :0px; width : 100%;
     font-size : 26px;
     font-weight : bold;
     text-align : center;
@@ -234,7 +245,7 @@ span.Top_Header{
 span.TopTextLine{
     position : absolute;
     background-color : rgb(107, 136, 186);
-    left : 36%; top : 90px; width : 10%; height : 4px;
+    left : 45%; top : 90px; width : 10%; height : 4px;
      
 }
 
@@ -254,7 +265,7 @@ span.Top_Header1{
     font-family : "BernardoModaContrast";
     border : 0px solid yellow;
     color : rgb(107, 136, 186);
-    top : 260px; left :10%; width : 70%;
+    top : 260px; left : 0px; width : 100%;
     font-size : 26px;
     font-weight : bold;
     text-align : center;
@@ -263,7 +274,7 @@ span.Top_Header1{
 span.TopTextLine1{
     position : absolute;
     background-color : rgb(107, 136, 186);
-    left : 36%; top : 305px; width : 10%; height : 4px;
+    left : 45%; top : 305px; width : 10%; height : 4px;
      
 }
 
@@ -288,7 +299,7 @@ div.Location{
 
     position : absolute;
     border : 0px solid red;
-    top: 420px; left : 5%; width : 40%; height : 110px;
+    top: 450px; left : 5%; width : 40%; height : 110px;
 
 }
 
@@ -322,7 +333,7 @@ div.Contact{
 
     position : absolute;
     border : 0px solid red;
-    top: 420px; left : 50%; width : 40%; height : 140px;
+    top: 450px; left : 50%; width : 40%; height : 140px;
 
 }
 
@@ -345,9 +356,41 @@ a.Contact
     z-index : 1;
 }
 
+
+
 /*
 
-    ************************ Drugi tekst i t≈Ço ****************************
+    ************************ Link Pyszne.pl****************************
+
+
+*/
+
+
+img.pyszne_pl
+{
+    position : absolute;
+    border : 0px solid red;
+    top: 545px; width : 20px; height : 20px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+span.pyszne_pl{
+
+    position : absolute;
+    border : 0px solid red;
+    text-decoration : none;
+    color : rgb(250, 117, 1);
+    font-family: 'Peralta', sans-serif;
+    top : 550px;
+    font-size : 14px;
+    cursor : pointer;
+}
+
+
+/*
+
+    ************************ Drugi tekst i t≥o ****************************
 
 
 */
@@ -357,7 +400,7 @@ div.BodyText2{
 
     position : relative;
     border : 0px solid green;
-    left : 0px; top : 50px; width : 100%; height : 650px; min-width : 320px;
+    left : 0px; top : 92%; width : 100%; height : 650px; min-width : 320px;
     border-top :2px solid rgb(241, 240, 238);
     border-bottom :4px solid rgb(255, 132, 0);
     background-color : rgb(0, 0, 0);
@@ -405,7 +448,25 @@ span.TextLine2_2
 span.Diner_Link{
 
     position : absolute;
-    left : 22%; top : 520px; width : 55%; height : 45px;
+    left : 22%; top : 490px; width : 55%; height : 45px;
+    padding-top : 10px;
+    border-radius : 7px;
+    border : 3px solid rgb(250, 1, 42);
+ /*   background-color : rgb(250, 1, 42); */
+    font-family : "Tahoma";
+    font-size : 20px;
+    color : rgb(230, 134, 18);
+    text-align : center;
+    cursor : pointer;
+
+    transition : border 200ms, color 1000ms;
+}
+
+
+span.Pizza_Link{
+
+    position : absolute;
+    left : 22%; top : 570px; width : 55%; height : 45px;
     padding-top : 10px;
     border-radius : 7px;
     border : 3px solid rgb(250, 1, 42);
@@ -430,7 +491,7 @@ span.Diner_Link{
 div.TextLine3{
     position : relative;
     border : 0px solid red;
-    left : 0px; top : 60px; width : 100%; height : 450px; min-width : 320px;
+    left : 0px; top : 92%; width : 100%; height : 450px; min-width : 320px;
 }
 
 span.HeadText3{
@@ -483,7 +544,7 @@ span.Prom_Link{
 footer.footer{
 
     position : relative;
-    left : 0px; top : 60px; width : 100%; height : 250px; min-width : 320px;
+    left : 0px; top : 92%; width : 100%; height : 250px; min-width : 320px;
     border-top :4px solid rgb(255, 132, 0);
     background-color : rgb(0, 0, 0);
 

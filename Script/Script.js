@@ -10,6 +10,7 @@ let TimeImgLoad;
 let TimeWindowScroll;
 let LoadImgTimeCount = 0;
 let Y;
+let ShowLink = false;
 
 
 const Logo_T = ["Text_P", "Text_i", "Text_c1", "Text_c2", "Text_a", "Text_n", "Text_t", "Text_e"];
@@ -305,7 +306,7 @@ function WaitForImg(){
 
     if(ImgLoaded == true)
     {
-        $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
+        $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
         IntervalId = window.setInterval(LogoAnim,20);
     }
     else 
@@ -314,7 +315,7 @@ function WaitForImg(){
         {
             LoadImgTimeCount = 0;
 
-            $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
+            $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
             IntervalId = window.setInterval(LogoAnim,20);
         }
         else
@@ -327,8 +328,61 @@ function WaitForImg(){
 }
 
 
+/*
+
+             Linker position seting
+
+
+*/
+
+
+function BodyResize()
+{
+    let ImgY;
+    let TextY;
+    let DivSizeY;
+    let SizeY;
+
+    if(!ShowLink)
+    {
+        $('.pyszne_pl').show();
+        ShowLink = true;
+    }
+
+    $('span.pyszne_pl').css('left', '0px');
+    $('img.pyszne_pl').css('left', '0px');
+
+    DivSizeY=parseInt(($('div.TopText').css('width')).slice(0,-2),10);
+
+    SizeY=parseInt(($('span.pyszne_pl').css('width')).slice(0,-2),10);
+
+    TextY = DivSizeY - SizeY - 25;
+    $('span.pyszne_pl').css('left', TextY.toString() + 'px');
+
+    SizeY=parseInt(($('img.pyszne_pl').css('width')).slice(0,-2),10);
+
+    ImgY = TextY - SizeY - 5;
+    $('img.pyszne_pl').css('left', ImgY.toString() + 'px');
+
+}
+
+
+/*
+
+             Linker position mouse cilck event
+
+
+*/
+
+function LinkerClick()
+{
+    window.open("https://www.pyszne.pl/menu/pizzeria-piccante-opole",parent);
+}
+
+
 function Load()
 {
+
     TimeImgLoad = window.setTimeout(WaitForImg,1500);
 
   //  LoadTables();
@@ -338,12 +392,18 @@ document.onload = Load();
 
 $(document).ready(() =>{
 
+
     $('span.Diner_Link').hover(MouseLinkEnt, MouseLinkLeave);
     $('span.Prom_Link').hover(MouseLinkEnt, MouseLinkLeave);
+    $('span.Pizza_Link').hover(MouseLinkEnt, MouseLinkLeave);
 
     $('a.Tel').hover(TelLinkEnt, TelLinkLeave);
     $('a.Kom').hover(TelLinkEnt, TelLinkLeave);
 
     $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
+
+    $('.pyszne_pl').click(LinkerClick);
+
+    window.setTimeout(BodyResize,1500);
 
 })

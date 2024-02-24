@@ -1,5 +1,5 @@
 div.Logo{
-    position : absolute; z-index : 1; left : 0px; width : 320px; height : 200px;
+    position : absolute; z-index : 1; left : 0px; width : 100%; height : 200px; min-width : 320px;
 }
 
 img.LogoBckg{
@@ -15,7 +15,7 @@ img.LogoImg{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Przycisk****************************
+    ************************ G³owne menu wysuwane Przycisk****************************
 
 
 */
@@ -63,7 +63,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Tabela****************************
+    ************************ G³owne menu wysuwane Tabela****************************
 
 
 */
@@ -98,6 +98,13 @@ table.MainMenuTable td{
 }
 
 
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
+}
+
+
 /*
 
     ************************ First Text Diner and menu ****************************
@@ -108,7 +115,7 @@ table.MainMenuTable td{
 div.BodyText1{
     position : relative;
     border : 0px solid red;
-    left : -6px; top : 194px;  width : 320px; height : 400px;
+    left : 0px; top : 205px;  width : 320px; height : 400px;
     background-color : rgb(2, 6, 34); 
     z-index : 0;
     border-top-left-radius : 2px;
@@ -132,7 +139,7 @@ span.HeaderText1{
 span.HeaderText1_2{
     position :absolute;
     border-top : 3px solid rgb(107, 136, 186);
-    padding : 2px;
+    padding-top : 2px;
     left : 0px; top : 80px; width : 100%;
     font-family: "BernardoModaContrast";
     font-size : 24px;
@@ -171,7 +178,7 @@ div.Menu{
 
 /*
 
-    ************************ SaÅ‚atki menu wysuwane****************************
+    ************************ Sa³atki menu wysuwane****************************
 
     
 */
@@ -253,7 +260,7 @@ span.ColdDrink_Button{
 
 /*
 
-    ************************ Napoje GorÄ…ce menu wysuwane****************************
+    ************************ Napoje Gor±ce menu wysuwane****************************
 
 
 */
@@ -440,7 +447,7 @@ span.Text2_5{
 
 div.Text2 a{
     position : absolute;
-    left : 18%; top : 370px;
+    left : 18%; top : 360px;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size : 24px;
     font-style : italic;
@@ -450,6 +457,36 @@ div.Text2 a{
     transition : color 1500ms;
 }
 
+
+
+/*
+
+    ************************ Link Pyszne.pl****************************
+
+
+*/
+
+
+img.pyszne_pl
+{
+    position : absolute;
+    border : 0px solid red;
+    top: 400px; width : 20px; height : 20px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+span.pyszne_pl{
+
+    position : absolute;
+    border : 0px solid red;
+    text-decoration : none;
+    color : rgb(250, 117, 1);
+    font-family: 'Peralta', sans-serif;
+    top : 410px;
+    font-size : 14px;
+    cursor : pointer;
+}
 
 /*
 

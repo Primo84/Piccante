@@ -4,11 +4,13 @@ let MenuId = ["#Salats_Desc", "#ColdDrink_Desc", "#HotDrink_Desc", "#Diner_Desc"
 
 let ButtonSelect = ["span.Salats_Button", "span.ColdDrink_Button", "span.HotDrink_Button", "span.Diner_Button"];
 
-let ButtonText = ["SA≈ÅATKI", "NAPOJE ZIMNE", "NAPOJE GORƒÑCE", "ZESTAWY OBIADOWE"];
+let ButtonText = ["SA£ATKI", "NAPOJE ZIMNE", "NAPOJE GOR°CE", "ZESTAWY OBIADOWE"];
 
 const MButtonCount = 4;
 
 let MenuVisible = false;
+
+let ShowLink = false;
 
 
 /*
@@ -190,6 +192,9 @@ function BodyRezise()
         $('div.BodyText1').css('height', Y.toString()  + 'px');
       //  $('div.BodyText1').css('height', DivHeight.toString() + 'px');
     }
+
+    LinkResize();
+
 }
 
 
@@ -366,7 +371,7 @@ function LoadTables()
     let i;
     let Y;
 
-// **************************************************Menu wysuwane sa≈Çatki***************************************
+// **************************************************Menu wysuwane sa≥atki***************************************
 
     for(i=0; i<SalatTable.length; i++)
     {
@@ -399,7 +404,7 @@ function LoadTables()
 
         $('#ColdDrink_Desc').css('top', Y.toString() + 'px').hide();
 
-    // **********************************************Menu wysuwane napoje gorƒÖce*************************************
+    // **********************************************Menu wysuwane napoje gor±ce*************************************
 
 
     for(i=0; i<HotDrinkTable.length; i++)
@@ -433,6 +438,49 @@ function LoadTables()
 
 };
 
+/*
+
+             Linker position mouse cilck and resize event
+
+
+*/
+
+function LinkerClick()
+{
+    window.open("https://www.pyszne.pl/menu/pizzeria-piccante-opole",parent);
+}
+
+function LinkResize()
+{
+    let ImgY;
+    let TextY;
+    let DivSizeY;
+    let SizeY;
+
+    if(!ShowLink)
+    {
+        $('.pyszne_pl').show();
+        ShowLink = true;
+    }
+
+    $('span.pyszne_pl').css('left', '0px');
+    $('img.pyszne_pl').css('left', '0px');
+
+    DivSizeY=parseInt(($('div.Text2').css('width')).slice(0,-2),10);
+
+    SizeY=parseInt(($('span.pyszne_pl').css('width')).slice(0,-2),10);
+
+    TextY = DivSizeY - SizeY - 25;
+    $('span.pyszne_pl').css('left', TextY.toString() + 'px');
+
+    SizeY=parseInt(($('img.pyszne_pl').css('width')).slice(0,-2),10);
+
+    ImgY = TextY - SizeY - 5;
+    $('img.pyszne_pl').css('left', ImgY.toString() + 'px');
+
+}
+
+
 
 $(document).ready(()=> 
 {
@@ -444,5 +492,9 @@ $(document).ready(()=>
     $('a.Kom').hover(TelLinkEnt, FooterTelLinkLeave);
 
     $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
+
+    $('.pyszne_pl').click(LinkerClick);
+
+    window.setTimeout(LinkResize,1500);
 
 });

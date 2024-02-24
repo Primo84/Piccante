@@ -1,4 +1,5 @@
 let MenuVisible = false;
+let ShowLink = false;
 
 /*
 
@@ -146,12 +147,111 @@ function ShowHideMenu()
 }
 
 
+/*
+
+               Telefon link events
+
+
+*/
+
+function TelLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function TelLinkLeave(EV)
+{
+    $(this).css("color", "rgb(109, 9, 241)");
+    EV.stopPropagation();
+}
+
+function FooterTelLinkLeave(EV)
+{
+    $(this).css("color", "rgb(203, 192, 177)");
+    EV.stopPropagation();
+}
+
+/*
+
+               Google link events
+
+
+*/
+
+function GoogleLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function GoogleLinkLeave(EV)
+{
+    $(this).css("color", "rgb(210, 183, 146)");
+    EV.stopPropagation();
+}
+
+
+
+
+/*
+
+             Linker position mouse cilck and resize event
+
+
+*/
+
+function LinkerClick()
+{
+    window.open("https://www.pyszne.pl/menu/pizzeria-piccante-opole",parent);
+}
+
+
+function BodyResize()
+{
+    let ImgY;
+    let TextY;
+    let DivSizeY;
+    let SizeY;
+
+    if(!ShowLink)
+    {
+        $('.pyszne_pl').show();
+        ShowLink = true;
+    }
+
+    $('span.pyszne_pl').css('left', '0px');
+    $('img.pyszne_pl').css('left', '0px');
+
+    DivSizeY=parseInt(($('div.Prom2').css('width')).slice(0,-2),10);
+
+    SizeY=parseInt(($('span.pyszne_pl').css('width')).slice(0,-2),10);
+
+    TextY = DivSizeY - SizeY - 25;
+    $('span.pyszne_pl').css('left', TextY.toString() + 'px');
+
+    SizeY=parseInt(($('img.pyszne_pl').css('width')).slice(0,-2),10);
+
+    ImgY = TextY - SizeY - 5;
+    $('img.pyszne_pl').css('left', ImgY.toString() + 'px');
+
+}
+
+
 $(document).ready(() => {
 
     $('a.Tel').hover(TelLinkEnt, FooterTelLinkLeave);
     $('a.Kom').hover(TelLinkEnt, FooterTelLinkLeave);
 
     $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
+
+    $('.pyszne_pl').click(LinkerClick);
+
+    window.setTimeout(BodyResize,1500);
 
 
 })

@@ -1,5 +1,5 @@
 div.Logo{
-    position : absolute; z-index : 1; left : 2%; width : 96%; height : 45%;
+    position : absolute; z-index : 1; left : 2%; top : 0px; width : 96%; height : 45%;
 }
 
 img.LogoBckg{
@@ -14,7 +14,7 @@ img.LogoImg{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Przycisk****************************
+    ************************ G³owne menu wysuwane Przycisk****************************
 
 
 */
@@ -62,7 +62,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Tabela****************************
+    ************************ G³owne menu wysuwane Tabela****************************
 
 
 */
@@ -95,6 +95,24 @@ table.MainMenuTable td{
     font-size : 14px;
     text-align : center;
 
+}
+
+
+div.MainMenu{
+
+    position : absolute;
+    border : 0px solid red;
+    left : 65%; top : 70px; width : 33%; height : 180px; 
+    overflow : hidden;
+    z-index : 2;
+}
+
+
+
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
 }
 
 
@@ -133,6 +151,27 @@ span.PromHeader{
 
 
 */
+
+img.pyszne_pl
+{
+    position : absolute;
+    border : 0px solid red;
+    top: 10px; width : 25px; height : 25px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+span.pyszne_pl{
+
+    position : absolute;
+    border : 0px solid red;
+    text-decoration : none;
+    color : rgb(250, 117, 1);
+    font-family: 'Peralta', sans-serif;
+    top : 15px;
+    font-size : 16px;
+    cursor : pointer;
+}
 
 div.Prom2{
     position : relative;
@@ -173,7 +212,7 @@ td.tableProm2{
     font-family: 'Poppins', sans-serif;
     font-size : 22px;
     text-align : right;
-    color :rgb(228, 16, 221);
+    color : rgb(239, 137, 12);
     letter-spacing : 3px;
     font-style : italic;
 }
@@ -185,7 +224,7 @@ td.tableProm3{
     font-family: 'Poppins', sans-serif;
     font-size : 22px;
     text-align : left;
-    color :rgb(228, 16, 221);
+    color : rgb(239, 137, 12);
     letter-spacing : 3px;
     font-style : italic;
 }

@@ -1,6 +1,10 @@
+div.Logo{
+    border : 0px solid yellow;
+    z-index : 1; position : absolute; left : 0px; top : 0px; width :100%; height : 120%;
+}
 
 #LogoBckg{
-    z-index : 0; position : relative; left:0px; width : 100%; height : 120%; min-width : 320px; min-height :604px;  /* Header Background */
+    z-index : 0; position : relative; left:0px; width : 100%; height : 100%;  /* Header Background */
 }
 
 #LogoI{
@@ -8,7 +12,7 @@
 }
 
 #T1{                                                /*  Text Piccante contener */
-    border : 0px solid red;
+    border : 0px solid yellow;
     position:absolute;
     width : 80%;
     height :80px;
@@ -48,7 +52,7 @@ img.Text_Logo{
 
 /*
 
-    ************************ G≈Çowne menu wysuwane Przycisk****************************
+    ************************ G≥owne menu wysuwane Przycisk****************************
 
 
 */
@@ -97,7 +101,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ G≈Çowne menu wysuwane Tabela****************************
+    ************************ G≥owne menu wysuwane Tabela****************************
 
 
 */
@@ -131,6 +135,14 @@ table.MainMenuTable td{
 }
 
 
+
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
+}
+
+
 /*
 
     ************************ Top and Under Header****************************
@@ -141,7 +153,7 @@ table.MainMenuTable td{
 div.Under_Header{
     position : relative;
     border : 0px solid green;
-    left :0px; top : 50px; width : 100%; height : 550px;
+    left :0px; top : 122%; width : 100%; height : 550px;
 }
 
 
@@ -218,7 +230,7 @@ div.TopText{
     background-color : rgb(2, 6, 34);
     border-top-left-radius : 15px;
     border-top-right-radius : 15px;
-    left:0%; top : 100px; width : 100%; height :600px;
+    left:0%; top :122%; width : 100%; height :600px;
 
 }
 
@@ -350,7 +362,40 @@ a.Contact
 
 /*
 
-    ************************ Drugi tekst i t≈Ço ****************************
+    ************************ Link Pyszne.pl****************************
+
+
+*/
+
+
+img.pyszne_pl
+{
+    position : absolute;
+    border : 0px solid red;
+    top: 530px; width : 50px; height : 50px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+span.pyszne_pl{
+
+    position : absolute;
+    border : 0px solid red;
+    text-decoration : none;
+    color : rgb(250, 117, 1);
+    font-family: 'Peralta', sans-serif;
+    top : 540px;
+    font-size : 32px;
+    cursor : pointer;
+}
+
+
+
+
+
+/*
+
+    ************************ Drugi tekst i t≥o ****************************
 
 
 */
@@ -360,7 +405,7 @@ div.BodyText2{
 
     position : relative;
     border : 0px solid green;
-    left : 0px; top : 100px; width : 100%; height : 700px;
+    left : 0px; top : 122%; width : 100%; height : 700px;
     border-top :2px solid rgb(241, 240, 238);
     border-bottom :4px solid rgb(255, 132, 0);
     background-color : rgb(0, 0, 0);
@@ -408,7 +453,7 @@ span.TextLine2_2
 span.Diner_Link{
 
     position : absolute;
-    left : 35%; top : 600px; width : 30%; height : 50px;
+    left : 35%; top : 530px; width : 30%; height : 50px;
     border-radius : 8px;
     border : 3px solid rgb(250, 1, 42);
  /*   background-color : rgb(250, 1, 42); */
@@ -421,7 +466,23 @@ span.Diner_Link{
     transition : border 200ms, color 1000ms;
 }
 
-/*rgb
+span.Pizza_Link{
+
+    position : absolute;
+    left : 35%; top : 610px; width : 30%; height : 50px;
+    border-radius : 8px;
+    border : 3px solid rgb(250, 1, 42);
+ /*   background-color : rgb(250, 1, 42); */
+    font-family : "Tahoma";
+    font-size : 32px;
+    color : rgb(230, 134, 18);
+    text-align : center;
+    cursor : pointer;
+
+    transition : border 200ms, color 1000ms;
+}
+
+/*
 
     ************************ Ostatni tekst  ****************************
 
@@ -432,7 +493,7 @@ span.Diner_Link{
 div.TextLine3{
     position : relative;
     border : 0px solid red;
-    left : 0px; top : 100px; width : 100%; height : 450px;
+    left : 0px; top : 122%; width : 100%; height : 450px;
 }
 
 span.HeadText3{
@@ -484,7 +545,7 @@ span.Prom_Link{
 footer.footer{
 
     position : relative;
-    left : 0px; top : 100px; width : 100%; height : 350px;
+    left : 0px; top : 122%; width : 100%; height : 350px;
     border-top :4px solid rgb(255, 132, 0);
     background-color : rgb(0, 0, 0);
 

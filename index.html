@@ -1,20 +1,20 @@
-<!DOCTYPE HTML5 PUBLIC
-"--\\W3C\\HTML5\\PL">
+<!DOCTYPE HTML>
 
 
 <HTML>
     <HEAD>
 
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="content-type" content = "text/html; charset=ISO-8859-2">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         <script type="Text/JavaScript" src="Script/Data.js"></script>
         <script type="Text/JavaScript" src="Script/Script.js"></script>
 
-        <link href='https://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
 
-        <link href='https://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext" rel="stylesheet" type='text/css'>
 
         <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -26,21 +26,21 @@
 
         <link rel = "stylesheet" href="Stylesheet/StyleFonts.css" type = "Text/CSS">
 
-        <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS" media = "ALL AND (width > 1200px)">
+        <link rel="stylesheet" href="Stylesheet/Style.css" type="Text/CSS" media = "ALL AND (min-width : 1200px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_1200.css" type="Text/CSS" media = "ALL AND (width <= 1200px)">
+        <link rel="stylesheet" href="Stylesheet/Style_1200.css" type="Text/CSS" media = "ALL AND (min-width : 1000px) AND (max-width : 1200px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_1000.css" type="Text/CSS" media = "ALL AND (width <= 1000px)">
+        <link rel="stylesheet" href="Stylesheet/Style_1000.css" type="Text/CSS" media = "ALL AND (min-width : 800px) AND (max-width : 1000px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_800.css" type="Text/CSS" media = "ALL AND (width <= 800px)">
+        <link rel="stylesheet" href="Stylesheet/Style_800.css" type="Text/CSS" media = "ALL AND (min-width : 600px) AND (max-width : 800px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_600.css" type="Text/CSS" media = "ALL AND (width <= 600px)">
+        <link rel="stylesheet" href="Stylesheet/Style_600.css" type="Text/CSS" media = "ALL AND (min-width : 480px) AND (max-width : 600px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_480.css" type="Text/CSS" media = "ALL AND (width <= 480px)">
+        <link rel="stylesheet" href="Stylesheet/Style_480.css" type="Text/CSS" media = "ALL AND (min-width : 390px) AND (max-width : 480px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_390.css" type="Text/CSS" media = "ALL AND (width <= 390px)">
+        <link rel="stylesheet" href="Stylesheet/Style_390.css" type="Text/CSS" media = "ALL AND (min-width : 330px) AND (max-width : 390px)">
 
-        <link rel="stylesheet" href="Stylesheet/Style_320.css" type="Text/CSS" media = "ALL AND (width <= 330px)">
+        <link rel="stylesheet" href="Stylesheet/Style_320.css" type="Text/CSS" media = "ALL AND (max-width : 330px)">
 
 
         <TITLE>
@@ -48,298 +48,319 @@
         </TITLE>
     </HEAD>
 
-    <BODY >
+    <BODY onresize = "BodyResize()">
+
+        <div class = "main">
         
-        <img draggable="false" src="Bmp/Header/Header_Pizza.jpg" id = "LogoBckg" onload="ImgLoad()">
+            <div class = "Logo">
 
-        <img draggable="false" src="Bmp/Header/Pizzeria_Logo.png" id = "LogoI">
-         
-       
-        <span id = "Text_Header">
+                <img draggable="false" src="Bmp/Header/Header_Pizza.jpg" id = "LogoBckg" onload="ImgLoad()">
 
-        </span>
-
-        <div id = "T1">
+                <img draggable="false" src="Bmp/Header/Pizzeria_Logo.png" id = "LogoI">
+                
             
-            <img draggable="false" src="Bmp/Header/Text/L_P.png" id = "Text_P" class="Text_Logo_P">
-            <img draggable="false" src="Bmp/Header/Text/L_I.png" id = "Text_i" class="Text_Logo">
-            <img draggable="false" src="Bmp/Header/Text/L_C1.png" id = "Text_c1" class="Text_Logo">
-
-            <img draggable="false" src="Bmp/Header/Text/L_C2.png" id = "Text_c2" class="Text_Logo">
-            <img draggable="false" src="Bmp/Header/Text/L_A.png" id = "Text_a" class="Text_Logo">
-            <img draggable="false" src="Bmp/Header/Text/L_N.png" id = "Text_n" class="Text_Logo">
-
-            <img draggable="false" src="Bmp/Header/Text/L_T.png" id = "Text_t" class="Text_Logo">
-            <img draggable="false" src="Bmp/Header/Text/L_E.png" id = "Text_e" class="Text_Logo">
-          
-        </div>     
-
-                                                                      
-
-      
-
-<!--                                                                                        
-
-
- *****************************************GĹĂłwne Menu Wysuwane *****************************************
-
-
-
--->
-
-
-       <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
-
-            <span class = "MainMenuButt1"></span>
-            <span class = "MainMenuButt2"></span>
-            <span class = "MainMenuButt3"></span>
-
-       </div>
-
-        <div class ="MainMenu">
-
-            <table class = "MainMenuTable">
-
-                 <tr>
-
-                    <td id="MenuPizz" style = "border-top : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
-                </tr>
-
-                <tr>
-                    <td id="ZestOb" onclick = "MenuItemMouseClick('ZestOb')" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
-                </tr>
-
-                <tr>
-                    <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
-                </tr>
-
-                <tr>
-                    <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
-                </tr>
-
-                <tr>
-                    <td id="Kontakt" style = "border-bottom : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
-                </tr>
-
-            </table>
-
-        </div>
-
-<!--                                                                                        
-
-
- *****************************************Pierwsze foto oraz godziny otwarcia *****************************************
-
-
-
--->
-        
-        <div class = "Under_Header">
-
-            <div class ="Top_timeOpen">
-
-                <img src = "Bmp/Body/Pizza_Table.jpg" width="100%" height="100%">
-
-                <span class = "Top_timeOpen">
-                    <h4>Godziny Otwarcia :</h4>
-                    PoniedziaĹek........11 - 20<br>
-                    Wtorek..............11 - 20<br>
-                    Ĺroda...............11 - 20<br>
-                    Czwartek............11 - 20<br>
-                    PiÄtek..............11 - 20<br>
-                    Sobota..............12 - 20<br>
+                <span id = "Text_Header">
 
                 </span>
 
+                <div id = "T1">
+                    
+                    <img draggable="false" src="Bmp/Header/Text/L_P.png" id = "Text_P" class="Text_Logo_P">
+                    <img draggable="false" src="Bmp/Header/Text/L_I.png" id = "Text_i" class="Text_Logo">
+                    <img draggable="false" src="Bmp/Header/Text/L_C1.png" id = "Text_c1" class="Text_Logo">
+
+                    <img draggable="false" src="Bmp/Header/Text/L_C2.png" id = "Text_c2" class="Text_Logo">
+                    <img draggable="false" src="Bmp/Header/Text/L_A.png" id = "Text_a" class="Text_Logo">
+                    <img draggable="false" src="Bmp/Header/Text/L_N.png" id = "Text_n" class="Text_Logo">
+
+                    <img draggable="false" src="Bmp/Header/Text/L_T.png" id = "Text_t" class="Text_Logo">
+                    <img draggable="false" src="Bmp/Header/Text/L_E.png" id = "Text_e" class="Text_Logo">
+                
+                </div>     
+
+                                                                            
+
+            
+
+        <!--                                                                                        
+
+
+        *****************************************G??wne Menu Wysuwane *****************************************
+
+
+
+        -->
+
+
+                <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+                        <span class = "MainMenuButt1"></span>
+                        <span class = "MainMenuButt2"></span>
+                        <span class = "MainMenuButt3"></span>
+
+                </div>
+
+                <div class ="MainMenu">
+
+                    <table class = "MainMenuTable">
+
+                        <tr>
+
+                            <td id="MenuPizz" style = "border-top : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                        </tr>
+
+                        <tr>
+                            <td id="ZestOb" onclick = "MenuItemMouseClick('ZestOb')" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Galeria" onmouseenter = "MenuItemMouseEnt('#Galeria')" onmouseleave = "MenuItemMouseLeave('#Galeria')">GALERIA</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Kontakt" style = "border-bottom : 2px solid rgb(179, 115, 31)" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div> 
+
+    <!--                                                                                        
+
+
+    *****************************************Pierwsze foto oraz godziny otwarcia *****************************************
+
+
+
+    -->
+            
+            <div class = "Under_Header">
+
+                <div class ="Top_timeOpen">
+
+                    <img src = "Bmp/Body/Pizza_Table.jpg" width="100%" height="100%">
+
+                    <span class = "Top_timeOpen">
+                        <h4>Godziny Otwarcia :</h4>
+                        Poniedziałek........11 - 20<br>
+                        Wtorek..............11 - 20<br>
+                        Środa...............11 - 20<br>
+                        Czwartek............11 - 20<br>
+                        Piątek..............11 - 20<br>
+                        Sobota..............12 - 20<br>
+
+                    </span>
+
+                </div>
+
+                <div class = "Top_Foto">
+
+                    <img src = "Bmp/Foto/Enter.jpg" class = "Enter_Foto">
+
+                    <img src = "Bmp/Foto/Front_1.jpg" class = "Foto1">
+
+                    <img src = "Bmp/Foto/Front_2.jpg" class = "Foto2">
+
+                </div>
+
             </div>
 
-            <div class = "Top_Foto">
 
-                <img src = "Bmp/Foto/Enter.jpg" class = "Enter_Foto">
 
-                <img src = "Bmp/Foto/Front_1.jpg" class = "Foto1">
+    <!--                                                                                        
 
-                <img src = "Bmp/Foto/Front_2.jpg" class = "Foto2">
 
+    *****************************************Pierwszy text raklamowy *****************************************
+
+
+
+    -->
+
+            <div class = "TopText">
+
+                <span class = "Top_Header">
+                    Jesteś głodny ?
+                </span><br>
+
+                <span class = "TopTextLine"></span>
+
+                <span class = "Top_Text">
+                    <i>
+                    Wpadnij do nas na przepyszną pizzę.
+                    Mamy bogaty wybór. Napewno znajdziesz coś dla siebie.
+                    Serwujemu aż cztery rozmiary.
+                    Przekonaj się sam i odwiedź nasz lokal. Nie zwlekaj i pozwól się zaskoczyć.
+                    </i>
+                </span>
+
+                <span class = "Top_Header1">
+                    Nie chcesz się ruszać ?
+                </span><br>
+
+                <span class = "TopTextLine1"></span>
+
+                <span class = "Top_Text1">
+                    <i>
+                        Wystarczy, że zadzwonisz. Na Państwa prośbę możemy dowieźć   
+                        zamówione potrawy pod wskazanu adres.<br><br>
+                        Opakowanie obiadowe - 2,00<br>
+                        Opakowanie na zupę - 1,50
+                    </i>
+                </span>
+            
+    <!--                                                                                        
+
+
+    *****************************************Linki do adresu i telefonu *****************************************
+
+
+
+    -->
+
+            <div class="Location">
+                <img src="Icons/location2.png" class="Location">
+                <span class = "Location" onclick = "MenuItemMouseClick('Kontakt')">
+                    Znajdziesz nas tutaj....
+                </span>
             </div>
-
-        </div>
-
-
-
-<!--                                                                                        
-
-
- *****************************************Pierwszy text raklamowy *****************************************
-
-
-
--->
-
-        <div class = "TopText">
-
-            <span class = "Top_Header">
-                JesteĹ gĹodny ?
-            </span><br>
-
-            <span class = "TopTextLine"></span>
-
-            <span class = "Top_Text">
-                <i>
-                Wpadnij do nas na przepysznÄ pizzÄ.
-                Mamy bogaty wybĂłr. Napewno znajdziesz coĹ dla siebie.
-                Serwujemu aĹź cztery rozmiary.
-                Przekonaj siÄ sam i odwiedĹş nasz lokal. Nie zwlekaj i pozwĂłl siÄ zaskoczyÄ.
-                </i>
-            </span>
-
-            <span class = "Top_Header1">
-                Nie chcesz siÄ ruszaÄ ?
-            </span><br>
-
-            <span class = "TopTextLine1"></span>
-
-            <span class = "Top_Text1">
-                <i>
-                Wystarczy, Ĺźe zadzwonisz. Na PaĹstwa proĹbÄ moĹźemy dowieĹşÄ
-                zamĂłwione potrawy pod wskazanu adres.
-                </i>
-            </span>
         
-<!--                                                                                        
 
+            <div class="Contact">
+                <img src="Icons/telephone.png" class="Contact">
+                <a href="tel:790256292" class = "Contact">
+                    Zadzwoń już teraz....
+                </a>
+            </div>
 
- *****************************************Linki do adresu i telefonu *****************************************
+            <img class = "pyszne_pl" src = "Icons/Linker.png">
 
+            <span class = "pyszne_pl">
 
+                Zamów na pyszne.pl
 
--->
-
-        <div class="Location">
-            <img src="icons/location2.png" class="Location">
-            <span class = "Location" onclick = "MenuItemMouseClick('Kontakt')">
-                Znajdziesz nas tutaj....
             </span>
-        </div>
-    
 
-        <div class="Contact">
-            <img src="icons/telephone.png" class="Contact">
-            <a href="tel:790256292" class = "Contact">
-                ZadzwoĹ juĹź teraz....
-            </a>
-        </div>
 
+        </div>
+    <!--                                                                                        
+
+
+    ***************************************** Drugi tekst  *****************************************
+
+
+
+    -->
+
+    <div class = "BodyText2">
+
+        <span class = "HeadText2">
+            Przeróżne zestawy obiadowe
+        </span>
+
+        <span class = "TextLine2_1">
+        </span>
+
+        <span class = "Text2">
+            W naszej restauracji podajemy także zestawy obiadowe.
+            Dzięki wieloletniemu doświadczeniu naszych kucharzy, nasze zupy
+            posiadają wyśmienity smak. <br>
+            Codziennie do wyboru w promocyjnej cenie : <br>
+            <ul style="list-style-type : circle">
+
+                <li>Zupa dnia</li>
+                <li>Danie dnia</li>
+
+            </ul>
+            
+        </span>
+
+        <span class = "TextLine2_2">
+        </span>
+
+        <span class = "Diner_Link" onclick = "MenuItemMouseClick('ZestOb')">
+            Przejdź do oferty
+        </span>
+
+        <span class = "Pizza_Link" onclick = "MenuItemMouseClick('Pizza')">
+            Menu Pizz
+        </span>
 
     </div>
-<!--                                                                                        
 
 
- ***************************************** Drugi tekst  *****************************************
+    <!--                                                                                        
 
 
-
--->
-
-<div class = "BodyText2">
-
-    <span class = "HeadText2">
-        PrzerĂłĹźne zestawy obiadowe
-    </span>
-
-    <span class = "TextLine2_1">
-    </span>
-
-    <span class = "Text2">
-        W naszej restauracji podajemy takĹźe zestawy obiadowe.
-        DziÄki wieloletniemu doĹwiadczeniu naszych kucharzy, nasze zupy
-        posiadajÄ wyĹmienity smak. <br>
-        Codziennie do wyboru w promocyjnej cenie : <br>
-        <ul style="list-style-type : circle">
-
-            <li>Zupa dnia</li>
-            <li>Danie dnia</li>
-
-        </ul>
-        
-    </span>
-
-    <span class = "TextLine2_2">
-    </span>
-
-    <span class = "Diner_Link" onclick = "MenuItemMouseClick('ZestOb')">
-        PrzejdĹş do oferty
-    </span>
-
-</div>
-
-
-<!--                                                                                        
-
-
- ***************************************** Ostatnia reklama *****************************************
+    ***************************************** Ostatnia reklama *****************************************
 
 
 
--->
+    -->
 
-<div class = "TextLine3">
+    <div class = "TextLine3">
 
-    <span class = "HeadText3">
-        KuszÄce promocje !!!
-    </span>
+        <span class = "HeadText3">
+            Kuszące promocje !!!
+        </span>
 
-    <span class = TextLine3>
-        Specjanlnie dla naszych klientĂłw przygotowaliĹmy 
-        kuszÄce promocje. Kliknij przycisk poniĹźej i sprawdĹş
-        co mamy do zaoferowania.
-    </span>
+        <span class = TextLine3>
+            Specjanlnie dla naszych klientów przygotowaliśmy 
+            kuszące promocje. Kliknij przycisk poniżej i sprawdź 
+            co mamy do zaoferowania.
+        </span>
 
-    <span class = "Prom_Link" onclick = "MenuItemMouseClick('Prom')">
-        PrzejdĹş do promocji
-    </span>
+        <span class = "Prom_Link" onclick = "MenuItemMouseClick('Prom')">
+            Przejdź do promocji
+        </span>
 
-</div>
-
-
-<!--                                                                                        
+    </div>
 
 
- *****************************************Dolna Stopka *****************************************
+    <!--                                                                                        
+
+
+    *****************************************Dolna Stopka *****************************************
 
 
 
--->
+    -->
 
 
-        <footer class = "footer" id = "footer">
-            <img src = "Bmp/Body/Logo.png">
+            <footer class = "footer" id = "footer">
+                <img src = "Bmp/Body/Logo.png">
 
-            <span class = "Adres_H">
-                Nasz Adres
-            </span>
+                <span class = "Adres_H">
+                    Nasz Adres
+                </span>
 
-            <span class = "Adres">
-               Opole Metalchem OĹwiÄcimska 98<br>
-                (Pawilon Biedronki)
-            </span>
+                <span class = "Adres">
+                Opole Metalchem Oświęcimska 98<br>
+                    (Pawilon Biedronki)
+                </span>
 
-            <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
-                Zobacz na GoogleMaps
-            </a>
+                <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
+                    Zobacz na GoogleMaps
+                </a>
 
-            <img src = "icons/Address.png" id = "Address">
+                <img draggable="false" src = "Icons/Address.png" id = "Address">
 
-            <span class = "Tel_H">
-                Numery tel.
-            </span>
+                <span class = "Tel_H">
+                    Numery tel.
+                </span>
 
-            <img src = "icons/Tel.png" id = "Tel"> 
+                <img draggable="false" src = "Icons/Tel.png" id = "Tel"> 
 
-            <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
-            <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
+                <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
+                <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
 
-        </footer>
+            </footer>
+
+    </div>
         
     </BODY>
 </HTML>

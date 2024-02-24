@@ -13,7 +13,7 @@ img.LogoImg{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Przycisk****************************
+    ************************ G³owne menu wysuwane Przycisk****************************
 
 
 */
@@ -61,7 +61,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ GÅ‚owne menu wysuwane Tabela****************************
+    ************************ G³owne menu wysuwane Tabela****************************
 
 
 */
@@ -94,6 +94,13 @@ table.MainMenuTable td{
     font-size : 16px;
     text-align : center;
 
+}
+
+
+div.main{
+    position : absolute;
+    border : 0px solid yellow;
+    left : 0px; top : 0px; width : 100%; height : 100%; 
 }
 
 
@@ -131,7 +138,7 @@ span.HeaderText1{
 span.HeaderText1_2{
     position :absolute;
     border-top : 6px solid rgb(107, 136, 186);
-    padding : 10px;
+    padding-top : 10px;
     left : 0px; top : 120px; width : 100%;
     font-family: "BernardoModaContrast";
     font-size : 36px;
@@ -170,7 +177,7 @@ div.Menu{
 
 /*
 
-    ************************ SaÅ‚atki menu wysuwane****************************
+    ************************ Sa³atki menu wysuwane****************************
 
     
 */
@@ -252,7 +259,7 @@ span.ColdDrink_Button{
 
 /*
 
-    ************************ Napoje GorÄ…ce menu wysuwane****************************
+    ************************ Napoje Gor±ce menu wysuwane****************************
 
 
 */
@@ -386,7 +393,7 @@ span.Text_Header2{
     font-family: "BernardoModaContrast";
     font-style : italic;
     text-shadow : 0px 10px 20px rgb(245, 3, 245);
-    font-size : 58px;
+    font-size : 52px;
     color : rgb(109, 9, 241);
 }
 
@@ -414,7 +421,7 @@ span.Text2_3{
     left : 0%; top : 320px; width : 100%;
     text-align : center;
     font-family: "BernardoModaContrast";
-    font-size : 40px;
+    font-size : 34px;
     font-style : italic;
     color : rgb(109, 9, 241);
     text-shadow : 0px 10px 20px rgb(109, 9, 241);
@@ -448,6 +455,36 @@ div.Text2 a{
     text-decoration : none;
     cursor : pointer;
     transition : color 1500ms;
+}
+
+
+/*
+
+    ************************ Link Pyszne.pl****************************
+
+
+*/
+
+
+img.pyszne_pl
+{
+    position : absolute;
+    border : 0px solid red;
+    top: 600px; width : 35px; height : 35px;
+    cursor : pointer;
+    z-index : 1;
+}
+
+span.pyszne_pl{
+
+    position : absolute;
+    border : 0px solid red;
+    text-decoration : none;
+    color : rgb(250, 117, 1);
+    font-family: 'Peralta', sans-serif;
+    top : 610px;
+    font-size : 20px;
+    cursor : pointer;
 }
 
 

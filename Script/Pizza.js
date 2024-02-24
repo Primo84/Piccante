@@ -38,6 +38,55 @@ function MenuItemMouseLeave(Item)
 }
 
 
+
+/*
+
+               Telefon link events
+
+
+*/
+
+function TelLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function TelLinkLeave(EV)
+{
+    $(this).css("color", "rgb(109, 9, 241)");
+    EV.stopPropagation();
+}
+
+function FooterTelLinkLeave(EV)
+{
+    $(this).css("color", "rgb(203, 192, 177)");
+    EV.stopPropagation();
+}
+
+/*
+
+               Google link events
+
+
+*/
+
+function GoogleLinkEnt(EV)
+{
+    $(this).css("color", "rgb(250, 1, 42)");
+    EV.stopPropagation();
+
+}
+
+
+function GoogleLinkLeave(EV)
+{
+    $(this).css("color", "rgb(210, 183, 146)");
+    EV.stopPropagation();
+}
+
 function ScrollWindow(SY)
 {
     let prevSY;
@@ -173,7 +222,7 @@ function WaitForImg(){
 
     if(ImgLoaded == true)
     {
-        $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
+        $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
         $('#Text_Header').fadeIn(1000).css("color", "rgb(239, 103, 6)");
     }
     else 
@@ -182,7 +231,7 @@ function WaitForImg(){
         {
             LoadImgTimeCount = 0;
 
-            $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
+            $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
             $('#Text_Header').fadeIn(1000).css("color", "rgb(239, 103, 6)");
         }
         else
@@ -247,6 +296,14 @@ function BodyResize()
         SY += 10;
         $(Footer).css('top', SY.toString() + 'px');
         Footer=null;
+
+        $('div.Text2 a').hover(TelLinkEnt, TelLinkLeave);
+
+        $('a.Tel').hover(TelLinkEnt, FooterTelLinkLeave);
+        $('a.Kom').hover(TelLinkEnt, FooterTelLinkLeave);
+    
+        $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
+
     }
     else
     {
@@ -331,6 +388,7 @@ function LoadTables()
 
  
 }
+
 
 function Load()
 {
