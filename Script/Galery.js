@@ -84,9 +84,9 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Pizza.html";
     }
-    else if(ItemText=='Galery')
+    else if(ItemText=='Prom')
     {
-        window.location.href = "Galery.html";
+        window.location.href = "Prom.html";
     }
 
 }

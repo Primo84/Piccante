@@ -96,6 +96,10 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Pizza.html";
     }
+    else if(ItemText=='Galery')
+    {
+        window.location.href = "Galery.html";
+    }
 
 }
 

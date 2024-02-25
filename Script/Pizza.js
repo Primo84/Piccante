@@ -141,6 +141,10 @@ function MenuItemMouseClick(ItemText)
     {
         window.location.href = "Diner.html";
     }
+    else if(ItemText=='Galery')
+    {
+        window.location.href = "Galery.html";
+    }
 
 }
 

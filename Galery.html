@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+
+<HTML>
+    <HEAD>
+
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="content-type" content = "text/html; charset=ISO-8859-2">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src = "Script/Galery.js" type = "Text/JavaScript"></script> 
+
+        <link rel = "stylesheet" href = "Stylesheet/StyleFonts.css" type = "Text/CSS">
+
+        <link href='https://fonts.googleapis.com/css?family=Paprika&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cormorant+Upright&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Peralta&subset=latin,latin-ext" rel="stylesheet" type='text/css'>
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style.css" type="Text/CSS" media = "ALL AND (min-width : 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_1200.css" type="Text/CSS" media = "ALL AND (min-width : 1000px) AND (max-width : 1200px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_1000.css" type="Text/CSS" media = "ALL AND (min-width : 800px) AND (max-width : 1000px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_800.css" type="Text/CSS" media = "ALL AND (min-width : 600px) AND (max-width : 800px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_600.css" type="Text/CSS" media = "ALL AND (min-width : 480px) AND (max-width : 600px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_480.css" type="Text/CSS" media = "ALL AND (min-width : 390px) AND (max-width : 480px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_390.css" type="Text/CSS" media = "ALL AND (min-width : 330px) AND (max-width : 390px)">
+
+        <link rel="stylesheet" href="Stylesheet/Galery/Style_320.css" type="Text/CSS" media = "ALL AND (max-width : 330px)">
+
+
+        <TITLE>
+            "Pizzeria Piccante Opole"
+        </TITLE>
+    </HEAD>
+
+
+    <BODY onresize = "BodyRezise()">
+
+        <div class = "main">
+
+            <div class = "Logo">
+                
+                <img draggable="false" src = "Bmp/Header/4.jpg" class = "LogoBckg">
+                <img draggable="false" src = "Bmp/Body/Logo.png" class = "LogoImg">
+
+                <!--                                                                                        
+
+
+                *****************************************Główne Menu Wysuwane *****************************************
+
+
+                -->
+
+
+                <div class = "MainMenuButton" onmouseenter = "MenuMouseEnt()" onmouseleave = "MenuMouseLeave()" onclick="ShowHideMenu()">
+
+                    <span class = "MainMenuButt1"></span>
+                    <span class = "MainMenuButt2"></span>
+                    <span class = "MainMenuButt3"></span>
+
+                </div>
+
+                <div class ="MainMenu">
+
+                    <table class = "MainMenuTable">
+
+                        <tr>
+                            <td id="HomePage" onclick = "MenuItemMouseClick('HomePage')" onmouseenter = "MenuItemMouseEnt('#HomePage')" onmouseleave = "MenuItemMouseLeave('#HomePage')">HOME PAGE</td>
+                        </tr>
+
+                        <tr>
+
+                            <td id="MenuPizz" style = "border-top : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Pizza')" onmouseenter = "MenuItemMouseEnt('#MenuPizz')" onmouseleave = "MenuItemMouseLeave('#MenuPizz')">MENU PIZZ</td>
+                        </tr>
+
+                        <tr>
+                            <td id="ZestOb" onclick = "MenuItemMouseClick('ZestOb')" onmouseenter = "MenuItemMouseEnt('#ZestOb')" onmouseleave = "MenuItemMouseLeave('#ZestOb')">ZESTAWY OBIADOWE</td>
+                        </tr>
+
+
+                        <tr>
+                            <td id="Promocje" onclick = "MenuItemMouseClick('Prom')" onmouseenter = "MenuItemMouseEnt('#Promocje')" onmouseleave = "MenuItemMouseLeave('#Promocje')">PROMOCJE</td>
+                        </tr>
+
+                        <tr>
+                            <td id="Kontakt" style = "border-bottom : 3px solid rgb(239, 103, 6);" onclick = "MenuItemMouseClick('Kontakt')" onmouseenter = "MenuItemMouseEnt('#Kontakt')" onmouseleave = "MenuItemMouseLeave('#Kontakt')">KONTAKT</td>
+                        </tr>
+
+                    </table>
+
+                </div>   
+            </div>
+
+            <div class = "Prom">
+
+                <span class = "PromHeader">
+
+                    Galeria w przygotowaniu........
+
+                </span>
+
+            </div>
+
+
+        <!--   
+
+
+            *****************************************Dolna Stopka *****************************************
+
+
+
+        -->
+        
+        
+        <footer class = "footer" id = "footer">
+            <img src = "Bmp/Body/Logo.png">
+    
+            <span class = "Adres_H">
+                Nasz Adres
+            </span>
+    
+            <span class = "Adres">
+            Opole Metalchem Oświęcimska 98<br>
+                (Pawilon Biedronki)
+            </span>
+    
+            <a target = "parent" class = "LinkGoogle" href="https://www.google.pl/maps/place/O%C5%9Bwi%C4%99cimska+98,+45-641+Opole/@50.609746,17.967915,17z/data=!3m1!4b1!4m6!3m5!1s0x4711ab477d006e03:0x71c818bb9bcb9138!8m2!3d50.609746!4d17.9704899!16s%2Fg%2F11c5kz05yq?entry=ttu">
+                Zobacz na GoogleMaps
+            </a>
+    
+            <img src = "Icons/Address.png" id = "Address">
+    
+            <span class = "Tel_H">
+                Numery tel.
+            </span>
+    
+            <img src = "Icons/Tel.png" id = "Tel"> 
+    
+            <a href = "tel:774535009" class = "Tel">tel. 77 453 50 09</a>
+            <a href = "tel:790256292" class = "Kom" >kom. 790 256 292</a>
+    
+        </footer>
+
+
+        </div>  <!-- Div main -->
+
+    </BODY>
+
