@@ -251,6 +251,10 @@ $(document).ready(() => {
 
     $('.pyszne_pl').click(LinkerClick);
 
+    $('.pyszne_pl').hide();
+
+    ShowLink = false;
+
     window.setTimeout(BodyResize,1500);
 
 
