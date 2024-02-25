@@ -16,7 +16,7 @@ img.LogoImg{
 
 /*
 
-    ************************ G³owne menu wysuwane Przycisk****************************
+    ************************ G³ówne menu wysuwane Przycisk****************************
 
 
 */
@@ -64,7 +64,7 @@ span.MainMenuButt3{
 
 /*
 
-    ************************ G³owne menu wysuwane Tabela****************************
+    ************************ G?owne menu wysuwane Tabela****************************
 
 
 */
@@ -136,100 +136,6 @@ span.PromHeader{
     
 }
 
-/*
-
-    ************************ Text1 prom****************************
-
-
-*/
-
-img.pyszne_pl
-{
-    position : absolute;
-    border : 0px solid red;
-    top: 10px; width : 40px; height : 40px;
-    cursor : pointer;
-    z-index : 1;
-}
-
-span.pyszne_pl{
-
-    position : absolute;
-    border : 0px solid red;
-    text-decoration : none;
-    color : rgb(250, 117, 1);
-    font-family: 'Peralta', sans-serif;
-    top : 20px;
-    font-size : 24px;
-    cursor : pointer;
-}
-
-div.Prom2{
-    position : relative;
-    border-bottom : 4px solid rgb(239, 137, 12);
-    left : 0px; top : 85%; width : 100%; height : 640px;
-}
-
-span.PromText1{
-    position : absolute;
-    left : 15%; top : 80px; width : 70%;
-    font-family: 'Paprika', sans-serif;
-    font-size : 36px;
-    text-align : center;
-    color :rgb(107, 136, 186);
-    text-shadow : 15px 15px 15px rgb(117, 7, 191);
-
-}
-
-table.tableProm
-{
-    position : absolute;
-    left : 0px; top : 320px; width : 100%;
-}
-
-td.tableProm1{
-    border : 0px solid red;
-    font-family: 'Poppins', sans-serif;
-    font-size : 44px;
-    text-align : center;
-    color :rgb(126, 14, 237);
-    word-spacing : 30px;
-    letter-spacing : 5px;
-}
-
-
-td.tableProm2{
-    border : 0px solid red;
-    font-family: 'Poppins', sans-serif;
-    font-size : 44px;
-    text-align : right;
-    color : rgb(239, 137, 12);
-    letter-spacing : 5px;
-    font-style : italic;
-}
-
-
-
-td.tableProm3{
-    border : 0px solid red;
-    font-family: 'Poppins', sans-serif;
-    font-size : 44px;
-    text-align : left;
-    color : rgb(239, 137, 12);
-    letter-spacing : 5px;
-    font-style : italic;
-}
-
-span.PromText2{
-    position :absolute;
-    left : 40%; top : 550px; width : 60%;
-    font-family: 'Poppins', sans-serif;
-    font-size : 32px;
-    text-align : right;
-    color :rgb(218, 149, 89);
-    letter-spacing : 5px;
-    font-style : italic;
-}
 
 
 
