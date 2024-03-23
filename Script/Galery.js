@@ -1,5 +1,4 @@
 let MenuVisible = false;
-let ShowLink = false;
 
 /*
 
@@ -214,36 +213,6 @@ function LinkerClick()
     window.open("https://www.pyszne.pl/menu/pizzeria-piccante-opole",parent);
 }
 
-
-function BodyResize()
-{
-    let ImgY;
-    let TextY;
-    let DivSizeY;
-    let SizeY;
-
-    if(!ShowLink)
-    {
-        $('.pyszne_pl').show();
-        ShowLink = true;
-    }
-
-    $('span.pyszne_pl').css('left', '0px');
-    $('img.pyszne_pl').css('left', '0px');
-
-    DivSizeY=parseInt(($('div.Prom2').css('width')).slice(0,-2),10);
-
-    SizeY=parseInt(($('span.pyszne_pl').css('width')).slice(0,-2),10);
-
-    TextY = DivSizeY - SizeY - 25;
-    $('span.pyszne_pl').css('left', TextY.toString() + 'px');
-
-    SizeY=parseInt(($('img.pyszne_pl').css('width')).slice(0,-2),10);
-
-    ImgY = TextY - SizeY - 5;
-    $('img.pyszne_pl').css('left', ImgY.toString() + 'px');
-
-}
 
 
 $(document).ready(() => {
