@@ -228,7 +228,5 @@ $(document).ready(() => {
 
     ShowLink = false;
 
-    window.setTimeout(BodyResize,1500);
-
 
 })
