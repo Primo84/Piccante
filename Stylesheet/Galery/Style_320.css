@@ -127,7 +127,7 @@ div.Prom{
     position : relative;
     border-top : 4px solid rgb(239, 137, 12);
     border-bottom : 4px solid rgb(239, 137, 12);
-    left : 0px; top : 220px; width : 320px; height : 130px;
+    left : 0px; top : 220px; width : 320px; height : 530px;
     background-color : rgb(12, 3, 3);
     z-index : 0;
 }
@@ -141,6 +141,38 @@ span.PromHeader{
     text-align : center;
     color :rgb(239, 137, 12);
     text-shadow : 15px 15px 15px rgb(225, 70, 9);
+}
+
+
+/*
+
+    ************************ Foto gallery ****************************
+
+
+*/
+
+
+div.Gallery{
+
+    position : absolute;
+    left :20%; top : 90px; width : 78%; height : 320px;
+
+    border : 0px solid red;
+
+    /* background-color : rgb(12, 12, 12); */
+
+}
+
+
+div.MiniSlider{
+
+    position : absolute;
+    left : 1%; top : 110px; width : 16%; height : 260px;
+
+    border : 4px solid rgb(34, 33, 35);
+
+    /* background-color : rgb(12, 12, 12); */
+
 }
 
 

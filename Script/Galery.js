@@ -1,5 +1,17 @@
 let MenuVisible = false;
-let ShowLink = false;
+
+const imgSrc = [
+    "Gallery/1.jpg",
+    "Gallery/2.jpg",
+    "Gallery/3.jpg",
+    "Gallery/4.jpg",
+    "Gallery/5.jpg",
+    "Gallery/6.jpg",
+    "Gallery/7.jpg",
+    "Gallery/8.jpg",
+    "Gallery/9.jpg",
+    "Gallery/10.jpg"
+]
 
 /*
 
@@ -215,36 +227,6 @@ function LinkerClick()
 }
 
 
-function BodyResize()
-{
-    let ImgY;
-    let TextY;
-    let DivSizeY;
-    let SizeY;
-
-    if(!ShowLink)
-    {
-        $('.pyszne_pl').show();
-        ShowLink = true;
-    }
-
-    $('span.pyszne_pl').css('left', '0px');
-    $('img.pyszne_pl').css('left', '0px');
-
-    DivSizeY=parseInt(($('div.Prom2').css('width')).slice(0,-2),10);
-
-    SizeY=parseInt(($('span.pyszne_pl').css('width')).slice(0,-2),10);
-
-    TextY = DivSizeY - SizeY - 25;
-    $('span.pyszne_pl').css('left', TextY.toString() + 'px');
-
-    SizeY=parseInt(($('img.pyszne_pl').css('width')).slice(0,-2),10);
-
-    ImgY = TextY - SizeY - 5;
-    $('img.pyszne_pl').css('left', ImgY.toString() + 'px');
-
-}
-
 
 $(document).ready(() => {
 
@@ -253,13 +235,18 @@ $(document).ready(() => {
 
     $('a.LinkGoogle').hover(GoogleLinkEnt, GoogleLinkLeave);
 
-    $('.pyszne_pl').click(LinkerClick);
 
-    $('.pyszne_pl').hide();
+    $('div.Gallery').InitGallery(imgSrc, {
+
+        "Header" : 'rgb(34, 33, 35)',
+        "Border" : 'rgb(20, 18, 22)',
+        "Footer" : 'rgb(34, 33, 35)',
+        "Text"  : 'rgb(239, 137, 12)',
+        "Title" : 'source'
+    });
+
+    $('div.MiniSlider').InitMinislider(4, "vertical");
 
     ShowLink = false;
-
-    window.setTimeout(BodyResize,1500);
-
 
 })
