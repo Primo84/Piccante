@@ -1,4 +1,5 @@
 let MenuVisible = false;
+<<<<<<< HEAD
 
 const imgSrc = [
     "Gallery/1.jpg",
@@ -12,6 +13,8 @@ const imgSrc = [
     "Gallery/9.jpg",
     "Gallery/10.jpg"
 ]
+=======
+>>>>>>> 1796964efe6b91ab0ea610cf5e1eb67ddad1bf2f
 
 /*
 
@@ -249,4 +252,8 @@ $(document).ready(() => {
 
     ShowLink = false;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1796964efe6b91ab0ea610cf5e1eb67ddad1bf2f
 })
