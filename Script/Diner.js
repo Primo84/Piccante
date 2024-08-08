@@ -4,7 +4,7 @@ let MenuId = ["#Salats_Desc", "#ColdDrink_Desc", "#HotDrink_Desc", "#Diner_Desc"
 
 let ButtonSelect = ["span.Salats_Button", "span.ColdDrink_Button", "span.HotDrink_Button", "span.Diner_Button"];
 
-let ButtonText = ["SA£ATKI", "NAPOJE ZIMNE", "NAPOJE GOR°CE", "ZESTAWY OBIADOWE"];
+let ButtonText = ["SA≈ÅATKI", "NAPOJE ZIMNE", "NAPOJE GORƒÑCE", "ZESTAWY OBIADOWE"];
 
 const MButtonCount = 4;
 
@@ -373,7 +373,7 @@ function LoadTables()
     let i;
     let Y;
 
-// **************************************************Menu wysuwane sa≥atki***************************************
+// **************************************************Menu wysuwane saÔøΩatki***************************************
 
     for(i=0; i<SalatTable.length; i++)
     {
@@ -406,7 +406,7 @@ function LoadTables()
 
         $('#ColdDrink_Desc').css('top', Y.toString() + 'px').hide();
 
-    // **********************************************Menu wysuwane napoje gor±ce*************************************
+    // **********************************************Menu wysuwane napoje gorÔøΩce*************************************
 
 
     for(i=0; i<HotDrinkTable.length; i++)

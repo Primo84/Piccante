@@ -5,11 +5,11 @@ const MainMenuItems =[
 
 const SalatTable = [
 
-   ["GRECKA", "sa砤ta lodowa, ser feta, pomidor, oliwki, sos", 18.90],
+   ["GRECKA", "salata lodowa, ser feta, pomidor, oliwki, sos", 18.90],
 
-   ["TUNA", "sa砤ta lodowa, tu馽zyk, og髍ek, kukurydza, cebula, sos", 18.90],
+   ["TUNA", "sa艂ata lodowa, tu艅czyk, og贸rek, kukurydza, cebula, sos", 18.90],
 
-   ["TUTTI FRUTTI", "sa砤ta lodowa, og髍ek, kukurydza, ananas, kurczak, sos", 18.90]
+   ["TUTTI FRUTTI", "sa艂ata lodowa, og贸rek, kukurydza, ananas, kurczak, sos", 18.90]
 
 
 ];
@@ -35,9 +35,9 @@ const DinerTable = [
    ["Dania dnia(codzienne inne)", 23.00],
    ["Zupa dnia(codzienne inna)", 10.00],
    ["Zestaw dnia(zupa dnia + danie dnia II)", 30.00],
-   ["Schabowy, sur體ka, ziemniaki", 27.00],
-   ["Schabowy, sur體ka, frytki", 33.00],
-   ["Pierogi ukrai駍kie(8 szt.)", 18.00],
+   ["Schabowy, sur贸wka, ziemniaki", 27.00],
+   ["Schabowy, sur贸wka, frytki", 33.00],
+   ["Pierogi ukrai艅skie(8 szt.)", 18.00],
    ["Pielmieni", 21.00],
    ["Kapsalon", 33.00],
    ["Frytki 200g", 14.00]
@@ -56,26 +56,26 @@ const PizzaTable = [
    ["7. SPECIALE", "Sos pomidorowy, cebula, pieczarki, szynka, salami, ser, oregano", "23,90", "33,30", "47,30", "65,30"],
    ["8. PRIMAVERA", "Sos pomidorowy, szynka, szpinak, kukurydza, ser, kurczak, oregano", "23,90", "33,30", "47,30", "66,70"],
    ["10. MARINARA", "Sos pomidorowy, czosnek, cebula, krewetki, ser, oregano", "26,50", "35,30", "47,30", "68,50"],
-   ["11. CARUSO", "Sos pomidorowy, cebula, pieczarki, mi阺o, szynka, ser, oregano", "24,00", "33,50", "47,50", "66,30"],
+   ["11. CARUSO", "Sos pomidorowy, cebula, pieczarki, mi臋so, szynka, ser, oregano", "24,00", "33,50", "47,50", "66,30"],
    ["12. PICCANTE", "Sos pomidorowy, chili, cebula, pieczarki, szynka, peperoni, ser, oregano", "23,90", "33,30", "47,30", "66,30"],
    ["13. FRUTTI DI MARE", "Sos pomidorowy, czosnek, oliwki, owoce morza, ser, oregano", "26,50", "36,80", "49,80", "69,80"],
-   ["14. AL CAPONE", "Sos pomidorowy, cebula, pieczarki, szynka, kie砨asa, ser, oregano", "23,90", "33,30", "47,30", "66,30"],
-   ["15. RIMINI", "Sos pomidorowy, cebula, pieczarki, szynka, broku硑,ser, sos czosnkowy", "23,90", "33,20", "47,30", "66,20"],
+   ["14. AL CAPONE", "Sos pomidorowy, cebula, pieczarki, szynka, kielbasa, ser, oregano", "23,90", "33,30", "47,30", "66,30"],
+   ["15. RIMINI", "Sos pomidorowy, cebula, pieczarki, szynka, broku艂y,ser, sos czosnkowy", "23,90", "33,20", "47,30", "66,20"],
    ["16. HAWAI", "Sos pomidorowy, szynka, kukurydza, ananas, ser, oregano", "23,20", "33,20", "47,20", "66,20"],
    ["17. FIRMOWA", "Sos pomidorowy, cebula, pieczarki, szynka, kukurydza, peperoni, ser, oregano", "23,30", "33,50", "47,50", "66,20"],
-   ["18. MONT BLANC", "Sos pomidorowy, czosnek, cebula, broku硑, kurczak, ser", "23,30", "33,50", "47,20", "66,20"],
+   ["18. MONT BLANC", "Sos pomidorowy, czosnek, cebula, broku艂y, kurczak, ser", "23,30", "33,50", "47,20", "66,20"],
    ["20. SOLARE", "Sos pomidorowy, szynka, salami, kukurydza, papryka, ser, oregano", "23,20", "33,30", "47,30", "66,30"],
-   ["22. CASINO", "Sos pomidorowy, cebula, pieczarki, mi阺o, papryka, ser, oregano", "26,50", "34,20", "48,20", "66,20"],
+   ["22. CASINO", "Sos pomidorowy, cebula, pieczarki, mi臋so, papryka, ser, oregano", "26,50", "34,20", "48,20", "66,20"],
    ["23. CREMONA", "Sos pomidorowy, cebula, pieczarki, szynka, kurczak, ser, oregano, sos czosnkowy", "26,00", "33,50", "48,50", "66,50"],
    ["24. DELICE", "Sos pomidorowy, kurczak, czosnek, cebula, ser, oregano", "26,50", "33,90", "47,90", "66,90"],
    ["27. SPINACO", "Sos pomidorowy, pieczarki, oliwki, szpinak, szynka, ser", "26,50", "33,50", "48,50", "67,50"],
-   ["28. TUNA", "Sos pomidorowy, cebula, pieczarki, szynka, tu馽zyk, szpinak, ser, oregano", "26,00", "32,50", "47,50", "66,20"],
-   ["29. VEGETARIANA", "Sos pomidorowy, cebula, pieczarki, szpinak, broku硑, papryka, ser, oregano", "25,30", "33,50", "47,50", "66,50"],
+   ["28. TUNA", "Sos pomidorowy, cebula, pieczarki, szynka, tu艅czyk, szpinak, ser, oregano", "26,00", "32,50", "47,50", "66,20"],
+   ["29. VEGETARIANA", "Sos pomidorowy, cebula, pieczarki, szpinak, brokuly, papryka, ser, oregano", "25,30", "33,50", "47,50", "66,50"],
    ["31. FARMERSKA", "Sos pomidorowy, cebula, pieczarki, papryka, kurczak, ser, oregano", "26,00", "33,00", "47,00", "66,50"],
-   ["36. ROSA", "Sos pomidorowy, pieczarki, kurczak, pomidory, broku硑, ser, oregano", "26,50", "35,00", "48,00", "66,50"],
+   ["36. ROSA", "Sos pomidorowy, pieczarki, kurczak, pomidory, broku艂y, ser, oregano", "26,50", "35,00", "48,00", "66,50"],
    ["37. ZAWIJANA I", "Sos pomidorowy, ser, szynka, kukurydza, oregano", "---", "35,30", "49,30", "---"],
    ["38. ZAWIJANA II", "Sos pomidorowy, ser, szpinak, kurczak, czosnek, oregano", "---", "34,50", "49,90", "---"],
    ["39. RUCOLA", "Sos pomidorowy, ser, szynka, rukola, pomidory, oregano", "26,50", "34,90", "50,90", "67,90"],
    ["40. 4 SERY", "Sos pomidorowy, ser gouda, ser mozzarella, ser feta, ser camembert, pomidor, oregano", "26,90", "34,90", "50,90", "67,90"],
-   ["41. WIEJSKA", "Sos pomidorowy, ser, boczek, salami, kie砨asa, cebula, pieczarki, oregano", "26,90", "34,90", "50,90", "67,90"]
+   ["41. WIEJSKA", "Sos pomidorowy, ser, boczek, salami, kie艂basa, cebula, pieczarki, oregano", "26,90", "34,90", "50,90", "67,90"]
 ]
