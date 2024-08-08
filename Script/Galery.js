@@ -1,16 +1,16 @@
 let MenuVisible = false;
 
 const imgSrc = [
-    "Gallery/1.jpg",
-    "Gallery/2.jpg",
-    "Gallery/3.jpg",
-    "Gallery/4.jpg",
-    "Gallery/5.jpg",
-    "Gallery/6.jpg",
-    "Gallery/7.jpg",
-    "Gallery/8.jpg",
-    "Gallery/9.jpg",
-    "Gallery/10.jpg"
+    "./Gallery/1.jpg",
+    "./Gallery/2.jpg",
+    "./Gallery/3.jpg",
+    "./Gallery/4.jpg",
+    "./Gallery/5.jpg",
+    "./Gallery/6.jpg",
+    "./Gallery/7.jpg",
+    "./Gallery/8.jpg",
+    "./Gallery/9.jpg",
+    "./Gallery/10.jpg"
 ]
 
 /*
@@ -68,7 +68,6 @@ function MenuItemMouseClick(ItemText)
 {
     let El;
     let h;
-    let i;
 
     if(ItemText == 'Kontakt')
     {
@@ -77,7 +76,6 @@ function MenuItemMouseClick(ItemText)
 
         h = parseInt($('#footer').css('height').slice(0,-2),10); 
 
-        i= window.scrollY;
 
         Y = El.offsetTop + h;
 

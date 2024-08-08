@@ -68,7 +68,6 @@ function MenuItemMouseClick(ItemText)
 {
     let El;
     let h;
-    let i;
 
     if(ItemText == 'Kontakt')
     {
@@ -77,7 +76,6 @@ function MenuItemMouseClick(ItemText)
 
         h = parseInt($('#footer').css('height').slice(0,-2),10); 
 
-        i= window.scrollY;
 
         Y = El.offsetTop + h;
 
