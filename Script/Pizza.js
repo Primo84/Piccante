@@ -224,7 +224,7 @@ function WaitForImg(){
 
     if(ImgLoaded == true)
     {
-        $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
+        $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
         $('#Text_Header').fadeIn(1000).css("color", "rgb(239, 103, 6)");
     }
     else 
@@ -233,7 +233,7 @@ function WaitForImg(){
         {
             LoadImgTimeCount = 0;
 
-            $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
+            $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
             $('#Text_Header').fadeIn(1000).css("color", "rgb(239, 103, 6)");
         }
         else
