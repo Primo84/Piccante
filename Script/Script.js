@@ -308,7 +308,7 @@ function WaitForImg(){
 
     if(ImgLoaded == true)
     {
-        $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
+        $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
         IntervalId = window.setInterval(LogoAnim,20);
     }
     else 
@@ -317,7 +317,7 @@ function WaitForImg(){
         {
             LoadImgTimeCount = 0;
 
-            $('#Text_Header').html("Najlepsz± pizzê<br>zjesz u nas");
+            $('#Text_Header').html("NajlepszÄ… pizzÄ™<br>zjesz u nas");
             IntervalId = window.setInterval(LogoAnim,20);
         }
         else
